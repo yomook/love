@@ -41,6 +41,8 @@ helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
 ❂[Mid]
 ❂[All mid]
 ❂[Me]
+❂[Mybot]
+❂[Sendcontact]
 ❂[K1/K2/K3 join]
 ❂[K1/K2/K3/]
 ❂[K1/K2/K3 fuck:]
@@ -63,6 +65,9 @@ helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
 ❂[Copy @]
 ❂[Save]
 ❂[Load]
+❂[Spam on (Number) (Text)
+❂[Spam off (Number) (Text)
+❂[Gcreator]
 ❂[Tagall]         
 ❂[Kicker]
 ❂[Setpoint]
@@ -372,7 +377,7 @@ def bot(op):
 					json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
 				else:
 					pass                
-        if op.type == 25:
+        if op.type == 26:
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
@@ -525,6 +530,24 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Emid}
                 ka.sendMessage(msg)
+            elif "Mybot" == msg.text:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Amid}
+                cl.sendMessage(msg)
+                msg.contentMetadata = {'mid': kimid}
+                cl.sendMessage(msg)
+                msg.contentMetadata = {'mid': ki2mid}
+                cl.sendMessage(msg)
+            elif "Sendcontact" == msg.text:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': mid}
+                cl.sendMessage(msg)
+                msg.contentMetadata = {'mid': Amid}
+                ki.sendMessage(msg)
+                msg.contentMetadata = {'mid': kimid}
+                kk.sendMessage(msg)
+                msg.contentMetadata = {'mid': ki2mid}
+                ks.sendMessage(msg)
             elif msg.text in ["Gift","gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': '3b92ccf5-54d3-4765-848f-c9ffdc1da020',
@@ -1449,7 +1472,7 @@ def bot(op):
 #----------------------------------------------------------
             elif msg.text == "Setpoint":
               if msg.from_ in admin:
-                cl.sendText(msg.to, "ƧЄƬ ƬHЄ ԼƛƧƬƧЄЄƝƧ' ƤƠƖƝƬ(｀・ω・´)")
+                cl.sendText(msg.to, "sᴇᴛ ᴛʜᴇ ʟᴀsᴛsᴇᴇɴs' ᴘᴏɪɴᴛ(｀・ω・´)")
                 try:
                   del wait2['readPoint'][msg.to]
                   del wait2['readMember'][msg.to]
@@ -1571,14 +1594,78 @@ def bot(op):
                     kc.sendText(msg.to," " + string + " ")
                     ka.sendText(msg.to," " + string + " ")
 #-----------------------------------------------
-            elif "#test" in msg.text:
-                ks.sendText(msg.to,"ok")
+            elif "Gcreator" == msg.text:
+                try:
+                    group = cl.getGroup(msg.to)
+                    GS = group.creator.mid
+                    M = Message()
+                    M.contentType = 13
+                    M.contentMetadata = {'mid': GS}
+                    cl.sendMessage(M)
+                except:
+                    W = group.members[0].mid
+                    M = Message()
+                    M.to = msg.to
+                    M.contentType = 13
+                    M.contentMetadata = {'mid': W}
+                    cl.sendMessage(M)
+                    cl.sendText(msg.to,"old user")
+#-----------------------------------------------
+            elif "Spam " in msg.text:
+                txt = msg.text.split(" ")
+                jmlh = int(txt[2])
+                text = msg.text.replace("Spam "+str(txt[1])+" "+str(jmlh)+" ","")
+                tulisan = jmlh * (text+"\n")
+                if txt[1] == "on":
+                    if jmlh <= 1000:
+                        for x in range(jmlh):
+                            cl.sendText(msg.to, text)
+                    else:
+                        cl.sendText(msg.to, "Out Of Range!")
+                elif txt[1] == "off":
+                    if jmlh <= 1000:
+                        cl.sendText(msg.to, tulisan)
+                    else:
+                        cl.sendText(msg.to, "Out Of Range!")
+#-----------------------------------------------
+            elif "Steal dp @" in msg.text:
+                nama = msg.text.replace("Steal dp @","")
+                target = nama.rstrip(' ')
+                van = cl.getGroup(msg.to)
+                for linedev in van.members:
+                    if target == linedev.displayName:
+                        midddd = cl.getContact(linedev.mid)
+                        PATH = "http://dl.profile.line-cdn.net/" + midddd.pictureStatus
+                    cl.sendImageWithURL(msg.to,PATH)
+#-----------------------------------------------
+            elif "Steal home @" in msg.text:
+                print "[Command]dp executing"
+                _name = msg.text.replace("Steal home @","")
+                gs = cl.getGroup(msg.to)
+                targets = []
+                for g in gs.members:
+                    if _nametarget == g.displayName:
+                        targets.append(g.mid)
+                if targets == []:                                                                   ki.sendText(msg.to,"Contact not found")
+                else:
+                    for target in targets:
+                        try:
+                            contact = cl.getContact(target)
+                            cu = cl.channel.getCover(target)
+                            path = str(cu)
+                            cl.sendImageWithURL(msg.to, path)
+                        except:
+                            pass
+                print "[Command]dp executed"
 #-----------------------------------------------
             elif "Speed" in msg.text:
                 start = time.time()
-                cl.sendText(msg.to, "Progress...")
+                cl.sendText(msg.to, "ᴘʀᴏɢʀᴇss...")
                 elapsed_time = time.time() - start
                 cl.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                ki.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                kk.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                ks.sendText(msg.to, "%sseconds" % (elapsed_time))    
 #-----------------------------------------------             
             elif msg.text == "Save":
                 me = cl.getProfile()
