@@ -18,14 +18,20 @@ ki.loginResult()
 
 kk = LINETCR.LINE()
 kk.login(qr=True)
-kk.loginResult()  
+kk.loginResult()
 
-ks = LINETCR.LINE() 
+ks = LINETCR.LINE()
 ks.login(qr=True)
-ks.loginResult()  
+ks.loginResult()
 
-kc = kk 
-ka = ks
+kc = LINETCR.LINE()
+kc.login(qr=True)
+kc.loginResult()
+
+ka = LINETCR.LINE()
+ka.login(qr=True)
+ka.loginResult()
+
 cl
 
 with open('profileSave.pkl') as f:
@@ -37,10 +43,13 @@ sys.setdefaultencoding('utf-8')
 helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
 [ᴛᴇᴀᴍ ᴛᴇ̲̅s̲̅ᴛ ʙᴏᴛ]
 
+[☬] ᴄᴏᴍᴍᴀɴᴅ [☬]
+
 ❂[Id]
 ❂[Mid]
 ❂[All mid]
 ❂[Me]
+❂[Me @]
 ❂[Mybot]
 ❂[Sendcontact]
 ❂[K1/K2/K3 join]
@@ -68,13 +77,14 @@ helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
 ❂[Spam on (Number) (Text)
 ❂[Spam off (Number) (Text)
 ❂[Gcreator]
+❂[Covergroup]
 ❂[Tagall]         
 ❂[Kicker]
 ❂[Setpoint]
 ❂[Setcheck]
 ❂[Kick"@tag] 
 
-[☬] (SET) COMMAND [☬]
+[☬] (sᴇᴛ) ᴄᴏᴍᴍᴀɴᴅ [☬]
 
 ❂[Contact: on/off] 
 ❂[Auto join: on/off] 
@@ -85,7 +95,7 @@ helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
 ❂[Auto add: on/off]
 ❂[Auto like: on/off] 
 	
-[☬] COMMAND IN THE GROUP [☬]
+[☬] ᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ [☬]
 
 ❂[Ban"@Tag] 
 ❂[Unban"@Tag] 
@@ -97,11 +107,13 @@ helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
 ❂[Say:"Text"]:
 ❂[Cancel]:
 ❂[Gn:"name"]:
-❂[NK:"Name"]:
+❂[NK @tag]:
 ❂[Dead]
-=============================
+
+•─✯͜͡ ᴀʀᴛʜᴜʀ ʙᴏᴛ★
+═══════════════════
 line.me/ti/p/~art-bot-cyber01
-=============================
+═══════════════════
 """
 helpMessage2 ="""[ᴛᴇᴀᴍ ᴛᴇ̲̅s̲̅ᴛ ʙᴏᴛ]
 
@@ -118,7 +130,7 @@ kimid = kk.getProfile().mid
 ki2mid = ks.getProfile().mid
 Cmid = kc.getProfile().mid
 Emid = ka.getProfile().mid
-admin = ["u8e24585f8677458d62ce174ff6dacc83"]
+admin = ["u8e24585f8677458d62ce174ff6dacc83","uf291388a1ed2cb1a0864b84a7b6106a6"]
 me = cl.getProfile().mid
 bot1 = cl.getProfile().mid
 main = cl.getProfile().mid
@@ -131,7 +143,7 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 
-admins = ["u8e24585f8677458d62ce174ff6dacc83"]
+admins = ["u8e24585f8677458d62ce174ff6dacc83","uf291388a1ed2cb1a0864b84a7b6106a6"]
 Rx5 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
 Rx4 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
 Rx3 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
@@ -538,6 +550,10 @@ def bot(op):
                 cl.sendMessage(msg)
                 msg.contentMetadata = {'mid': ki2mid}
                 cl.sendMessage(msg)
+                msg.contentMetadata = {'mid': Cmid}
+                cl.sendMessage(msg)
+                msg.contentMetadata = {'mid': Emid}
+                cl.sendMessage(msg)
             elif "Sendcontact" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
@@ -548,6 +564,10 @@ def bot(op):
                 kk.sendMessage(msg)
                 msg.contentMetadata = {'mid': ki2mid}
                 ks.sendMessage(msg)
+                msg.contentMetadata = {'mid': Cmid}
+                kc.sendMessage(msg)
+                msg.contentMetadata = {'mid': Emid}
+                ka.sendMessage(msg)
             elif msg.text in ["Gift","gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': '3b92ccf5-54d3-4765-848f-c9ffdc1da020',
@@ -1585,6 +1605,22 @@ def bot(op):
                     except:
                         pass                
 #-----------------------------------------------
+            elif msg.text in ["Cb","ล้างดำ"]:
+                                wait["blacklist"] = {}
+                                cl.sendText(msg.to,"clear")
+#-----------------------------------------------
+            elif "Me @" in msg.text:
+                msg.contentType = 13
+                _name = msg.text.replace("Me @","")
+                _nametarget = _name.rstrip(' ')
+                gs = cl.getGroup(msg.to)
+                for g in gs.members:
+                    if _nametarget == g.displayName:
+                        msg.contentMetadata = {'mid': g.mid}
+                        cl.sendMessage(msg)
+                    else:
+                         pass
+#-----------------------------------------------
             elif "Say " in msg.text:
                 string = msg.text.replace("Say ","")
                 if len(string.decode('utf-8')) <= 50:
@@ -1594,22 +1630,54 @@ def bot(op):
                     kc.sendText(msg.to," " + string + " ")
                     ka.sendText(msg.to," " + string + " ")
 #-----------------------------------------------
-            elif "Gcreator" == msg.text:
-                try:
-                    group = cl.getGroup(msg.to)
-                    GS = group.creator.mid
-                    M = Message()
-                    M.contentType = 13
-                    M.contentMetadata = {'mid': GS}
-                    cl.sendMessage(M)
-                except:
-                    W = group.members[0].mid
-                    M = Message()
-                    M.to = msg.to
-                    M.contentType = 13
-                    M.contentMetadata = {'mid': W}
-                    cl.sendMessage(M)
-                    cl.sendText(msg.to,"old user")
+            elif msg.text in ["Group creator","Gc","Gcreator","gcreator"]:
+                ginfo = cl.getGroup(msg.to)
+                gCreator = ginfo.creator.mid
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': gCreator}
+                cl.sendMessage(msg)
+                cl.sendText(msg.to,"Creator Group")
+#-----------------------------------------------
+            elif "Nk " in msg.text:
+                       nk0 = msg.text.replace("Nk ","")
+                       nk1 = nk0.lstrip()
+                       nk2 = nk1.replace("@","")
+                       nk3 = nk2.rstrip()
+                       _name = nk3
+                       gs = cl.getGroup(msg.to)
+                       ginfo = cl.getGroup(msg.to)
+                       gs.preventJoinByTicket = False
+                       cl.updateGroup(gs)
+                       invsend = 0
+                       Ticket = cl.reissueGroupTicket(msg.to)
+                       kc.acceptGroupInvitationByTicket(msg.to,Ticket)
+                       time.sleep(0.2)
+                       targets = []
+                       for s in gs.members:
+                           if _name in s.displayName:
+                              targets.append(s.mid)
+                       if targets == []:
+                           sendMessage(msg.to,"user does not exist")
+                           pass
+                       else:
+                           for target in targets:
+                                try:
+                                    kc.kickoutFromGroup(msg.to,[target])
+                                    print (msg.to,[g.mid])
+                                except:
+                                    kc.leaveGroup(msg.to)
+                                    gs = cl.getGroup(msg.to)
+                                    gs.preventJoinByTicket = True
+                                    cl.updateGroup(gs)
+                                    gs.preventJoinByTicket(gs)
+                                    cl.updateGroup(gs)
+#-----------------------------------------------
+            elif "Covergroup" in msg.text:
+                thisgroup = cl.getGroups([msg.to])
+                Mids = [contact.mid for contact in thisgroup[0].members]
+                mi_d = Mids[:33]
+                cl.createGroup("GŘØỮP ĆØV€Ř", mi_d)
+                cl.sendText(msg.to,"Cover Group")
 #-----------------------------------------------
             elif "Spam " in msg.text:
                 txt = msg.text.split(" ")
@@ -1666,6 +1734,14 @@ def bot(op):
                 ki.sendText(msg.to, "%sseconds" % (elapsed_time))    
                 kk.sendText(msg.to, "%sseconds" % (elapsed_time))    
                 ks.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                kc.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                ka.sendText(msg.to, "%sseconds" % (elapsed_time))    
+#-----------------------------------------------
+            elif "Sp" in msg.text:
+                start = time.time()
+                cl.sendText(msg.to, "ᴘʀᴏɢʀᴇss...")
+                elapsed_time = time.time() - start
+                cl.sendText(msg.to, "%sseconds" % (elapsed_time))    
 #-----------------------------------------------             
             elif msg.text == "Save":
                 me = cl.getProfile()
@@ -2100,29 +2176,29 @@ def bot(op):
                     print e
                     pass
                     
-        if op.param1 in autocancel:
-			OWN = "ua7fc5964d31f45ac75128fc2b8deb842","u406133ad4d3fbe50a2f4d51ea081d050","ua51ba06b0dd18c0bfe2cc6caa3458202","uc7f32bb28dc009916d40af87c9910ddc"
-			if op.param2 in OWN:
-				pass
-			else:
-				Inviter = op.param3.replace("",',')
-				InviterX = Inviter.split(",")
-				contact = cl.getContact(op.param2)
-				cl.cancelGroupInvitation(op.param1,InviterX)
-				ki.cancelGroupInvitation(op.param1,InviterX)
-				kk.cancelGroupInvitation(op.param1,InviterX)
-				ks.cancelGroupInvitation(op.param1,InviterX)
-				kc.cancelGroupInvitation(op.param1,InviterX)
-				ka.cancelGroupInvitation(op.param1,InviterX)
-				cl.kickoutFromGroup(op.param1,[op.param2])
-				ki.kickoutFromGroup(op.param1,[op.param2])
-				kk.kickoutFromGroup(op.param1,[op.param2])
-				ks.kickoutFromGroup(op.param1,[op.param2])
-				kc.kickoutFromGroup(op.param1,[op.param2])
-				ka.kickoutFromGroup(op.param1,[op.param2])
-				wait["blacklist"][op.param2] = True
-				f=codecs.open('st2__b.json','w','utf-8')
-				json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
+#        if op.param1 in autocancel:
+#			OWN = "ua7fc5964d31f45ac75128fc2b8deb842","u406133ad4d3fbe50a2f4d51ea081d050","ua51ba06b0dd18c0bfe2cc6caa3458202","uc7f32bb28dc009916d40af87c9910ddc"
+#			if op.param2 in OWN:
+#				pass
+#			else:
+#				Inviter = op.param3.replace("",',')
+#				InviterX = Inviter.split(",")
+#				contact = cl.getContact(op.param2)
+#				cl.cancelGroupInvitation(op.param1,InviterX)
+#				ki.cancelGroupInvitation(op.param1,InviterX)
+#				kk.cancelGroupInvitation(op.param1,InviterX)
+#				ks.cancelGroupInvitation(op.param1,InviterX)
+#				kc.cancelGroupInvitation(op.param1,InviterX)
+#				ka.cancelGroupInvitation(op.param1,InviterX)
+#				cl.kickoutFromGroup(op.param1,[op.param2])
+#				ki.kickoutFromGroup(op.param1,[op.param2])
+#				kk.kickoutFromGroup(op.param1,[op.param2])
+#				ks.kickoutFromGroup(op.param1,[op.param2])
+#				kc.kickoutFromGroup(op.param1,[op.param2])
+#				ka.kickoutFromGroup(op.param1,[op.param2])
+#				wait["blacklist"][op.param2] = True
+#				f=codecs.open('st2__b.json','w','utf-8')
+#				json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
 #------------------------------------------------------------------------------------
         if op.type == 32:
 			OWN = "ua7fc5964d31f45ac75128fc2b8deb842","u406133ad4d3fbe50a2f4d51ea081d050","ua51ba06b0dd18c0bfe2cc6caa3458202","uc7f32bb28dc009916d40af87c9910ddc"
