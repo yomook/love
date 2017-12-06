@@ -9,27 +9,27 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess,pickle
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token="EnPwTVSi1QHytkFVTNC3.JIryx4z3ry1IZHDp9TRmGW.OK4V3JoeQi8OEpPCnH7VqzxJR6bpXTrPSt/WO4l5ZfE=")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(qr=True)
+ki.login(token="EncyhrUNwcZ6SIgxM0a3.N/6o2oDgZge0ng439NllSW.jTMoEG1J/bh0wrprtlWoYdgSDcCmlaY7fP5iuEIEvC0=")
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(qr=True)
+kk.login(token="EnpYWEuWddqtvGzUpB79.sEpoFLrSynl1O4R/jK+r6q.0EC/EB0AzOXi5PkcoJmsZr+d7NsOlFWdbJjLPDf7FGE=")
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(qr=True)
+ks.login(token="EnVV7o6nFRJ6rOVPYpp0.Yqmbk3y5dGImDYSHbIO7ia.yE5Hjo+AHjpJM9oz+gUGQFhozSaSoX7d11LaWWtcAdI=")
 ks.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(qr=True)
+kc.login(token="En7bSWt3xEAaNG4zfvm0.qTqJ/tcbW+c9xovbLqJnya.uxuDaic70JnzPM5DhT/MecHUbqQvvOVaz7alayH1aEw=")
 kc.loginResult()
 
 ka = LINETCR.LINE()
-ka.login(qr=True)
+ka.login(token="En7ShPUWwD8zM2O53kEb.brg8qqR4cXfYLtnKj4/hgW.KNprECxqXZ2iDJ5kNutnd6dZThVzibuk8wf/tjCMFJs=")
 ka.loginResult()
 
 cl
@@ -41,87 +41,91 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
-[ᴛᴇᴀᴍ ᴛᴇ̲̅s̲̅ᴛ ʙᴏᴛ]
-
-[☬] ᴄᴏᴍᴍᴀɴᴅ [☬]
-
-❂[Id]
-❂[Mid]
-❂[All mid]
-❂[Me]
-❂[Me @]
-❂[Mybot]
-❂[Sendcontact]
-❂[K1/K2/K3 join]
-❂[K1/K2/K3/]
-❂[K1/K2/K3 fuck:]
-❂[Group Id]
-❂[TL:"Text"]
-❂[Clock:]
-❂[Up clock]
-❂[Name:'text']
-❂[MIC]:"mid"]
-❂[Rejectall]
-❂[Massage add:"text"]
-❂[Add confirmasi]
-❂[Comment set:"Text"]
-❂[Comment check]
-❂[Clock: on]
-❂[Clock: off]
-❂[Ban]:
-❂[Unban]:
-❂[Banlist]:
-❂[Copy @]
-❂[Save]
-❂[Load]
-❂[Spam on (Number) (Text)
-❂[Spam off (Number) (Text)
-❂[Gcreator]
-❂[Covergroup]
-❂[Tagall]         
-❂[Kicker]
-❂[Setpoint]
-❂[Setcheck]
-❂[Kick"@tag] 
-
-[☬] (sᴇᴛ) ᴄᴏᴍᴍᴀɴᴅ [☬]
-
-❂[Contact: on/off] 
-❂[Auto join: on/off] 
-❂[Cancel Invite: 1 on/off]
-❂[Auto share: on/off]
-❂[Auto leave: on/off] 
-❂[Comment: on/off]
-❂[Auto add: on/off]
-❂[Auto like: on/off] 
-	
-[☬] ᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ [☬]
-
-❂[Ban"@Tag] 
-❂[Unban"@Tag] 
-❂[Urlon]:
-❂[Urloff]:
-❂[Url]:
-❂[Ginfo]:
-❂[Invite:"mid"] 
-❂[Say:"Text"]:
-❂[Cancel]:
-❂[Gn:"name"]:
-❂[NK @tag]:
-❂[Dead]
-
-•─✯͜͡ ᴀʀᴛʜᴜʀ ʙᴏᴛ★
-═══════════════════
-line.me/ti/p/~art-bot-cyber01
-═══════════════════
+─┅═✥ᵀᴴᴬᴵᴸᴬᴺᴰ✥═┅─
+    [ᴛᴇᴀᴍ ᴛᴇ̲̅s̲̅ᴛ ʙᴏᴛ]
+╔══════════════════
+║❂➣[Id]
+║❂➣[Mid]
+║❂➣[All mid]
+║❂➣[Me]
+║❂➣[Me @]
+║❂➣[Mybot]
+║❂➣[Sendcontact]
+║❂➣[K1/K2/K3 join]
+║❂➣[K1/K2/K3/]
+║❂➣[K1/K2/K3 fuck:]
+║❂➣[K1/K2/K3 gift
+║❂➣[Allgift]
+║❂➣[Group Id]
+║❂➣[TL:"Text"]
+║❂➣[Clock:]
+║❂➣[Up clock]
+║❂➣[Name:'text']
+║❂➣[Mic]:"mid"]
+║❂➣[Mc @]
+║❂➣[Rejectall]
+║❂➣[Massage add:"text"]
+║❂➣[Add confirmasi]
+║❂➣[Comment set:"Text"]
+║❂➣[Comment check]
+║❂➣[Clock: on]
+║❂➣[Clock: off]
+║❂➣[Ban]:
+║❂➣[Unban]:
+║❂➣[Banlist]:
+║❂➣[Allgiftt]
+║❂➣[Test]
+║❂➣[Copy @]
+║❂➣[Save]
+║❂➣[Load]
+║❂➣[Spam on (Number) (Text)
+║❂➣[Spam off (Number) (Text)
+║❂➣[Gcreator]
+║❂➣[Covergroup]
+║❂➣[Tagall]
+║❂➣[Kicker]
+║❂➣[Setpoint]
+║❂➣[Setcheck]
+║❂➣[Kick"@tag]]
+╠══════════════════
+║─┅═✥(sᴇᴛ)ᴄᴏᴍᴍᴀɴᴅ✥═┅─
+╠══════════════════
+║❂➣[Contact: on/off] 
+║❂➣[Auto join: on/off] 
+║❂➣[Cancel Invite: 1 on/off]
+║❂➣[Auto share: on/off]
+║❂➣[Auto leave: on/off] 
+║❂➣[Comment: on/off]
+║❂➣[Auto add: on/off]
+║❂➣[Auto like: on/off]║
+╠══════════════════
+║─┅═✥ᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ✥═┅─
+╠══════════════════
+║❂➣[Ban"@Tag] 
+║❂➣[Unban"@Tag] 
+║❂➣[Urlon]:
+║❂➣[Urloff]:
+║❂➣[Url]:
+║❂➣[Ginfo]:
+║❂➣[Invite:"mid"] 
+║❂➣[Say:"Text"]:
+║❂➣[Cancel]:
+║❂➣[Gn:"name"]:
+║❂➣[NK @tag]:
+║❂➣[Dead]
+╠══════════════════
+║•─✯͜͡ ᴀʀᴛʜᴜʀ★BOT
+╠══════════════════
+║line.me/ti/p/~art-bot-cyber01
+╚══════════════════
 """
-helpMessage2 ="""[ᴛᴇᴀᴍ ᴛᴇ̲̅s̲̅ᴛ ʙᴏᴛ]
-
-❂[PROTECT: ƠƝ/ƠƑƑ]: 
-❂[BLOCK URL: ƠƝ/ƠƑƑ]: 
-❂[NAMELOCK: ƠƝ/ƠƑƑ]: 
-❂[BLOCKINVITE: ƠƝ/ƠƑƑ]:  
-======================	
+helpMessage2 ="""•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•
+╔═══════════════════════
+║❂➣[PROTECT: ON/OFF]:
+║❂➣[BLOCK URL: ON/OFF]:
+║❂➣[NAMELOCK: ON/OFF]:
+║❂➣[BLOCKINVITE: ON/OFF]:
+╚═══════════════════════
 """
 KAC = [cl,ki,kk,ks,kc,ka]
 mid = cl.getProfile().mid
@@ -143,7 +147,7 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 
-admins = ["u8e24585f8677458d62ce174ff6dacc83","uf291388a1ed2cb1a0864b84a7b6106a6"]
+admins = ["u8e24585f8677458d62ce174ff6dacc83"]
 Rx5 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
 Rx4 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
 Rx3 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
@@ -159,14 +163,22 @@ wait = {
     'contact':False,
     'autoJoin':False,
     'autoCancel':{"on":False,"members":1},
-    'leaveRoom':False,
-    'timeline':False,
+    'leaveRoom':True,
+    'timeline':True,
     'autoAdd':True,
-    'message':"Owner http://line-tcr.py/ti/p/~art-bot-cyber01",
+    'message':"""                 ღ¸.✻´`✻.¸¸ღ
+     ╔════♪•●♥●•♪════╗
+         ♝●❉•ARTHUR•❉●♝
+            ∮.♪•Self★Bot•♪.∮
+                 Add For me
+line.me/ti/p/~art-bot-cyber01
+     ╚════♪•●♥●•♪════╝
+Thank For Add Me
+""",
     "lang":"JP",
-    "comment":"Auto like By.✨☬http://line.me/ti/p/~art-bot-cyber01☬",
-    "likeOn":True,
-    "commentOn":True,
+    "comment":"Auto like By.http://line.me/ti/p/~art-bot-cyber01☬",
+    "likeOn":False,
+    "commentOn":False,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
@@ -485,7 +497,7 @@ def bot(op):
                     cl.sendText(msg.to,helpMessage)
                 else:
                     cl.sendText(msg.to,helpt)
-            elif msg.text in ["key","Key","KEY"]:
+            elif msg.text in ["Help2","Key","KEY"]:
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to,helpMessage2)
                 else:
@@ -518,6 +530,10 @@ def bot(op):
                 midd = msg.text.replace("Invite:","")
                 cl.findAndAddContactsByMid(midd)
                 cl.inviteIntoGroup(msg.to,[midd])
+            elif "K1 invite:" in msg.text:
+                midd = msg.text.replace("K1 invite:","")
+                ki.findAndAddContactsByMid(midd)
+                ki.inviteIntoGroup(msg.to,[midd])
             elif "Me" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
@@ -610,6 +626,19 @@ def bot(op):
                                     'MSGTPL': '3'}
                 msg.text = None
                 ka.sendMessage(msg)
+            elif msg.text in ["Allgift","All Gift"]:
+                msg.contentType = 9
+                msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58',
+                                    'PRDTYPE': 'THEME',
+                                    'MSGTPL': '12'}
+                msg.text = None
+                cl.sendMessage(msg)
+                ki.sendMessage(msg)
+                kk.sendMessage(msg)
+                ks.sendMessage(msg)
+                kc.sendMessage(msg)
+                ka.sendMessage(msg)
+
             elif msg.text in ["cancel","Cancel"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
@@ -742,7 +771,7 @@ def bot(op):
                 ki.sendText(msg.to,Amid)
                 kk.sendText(msg.to,kimid)
                 ks.sendText(msg.to,ki2mid)      
-            elif "Wkwk" == msg.text:
+            elif "ฮ่าๆ" == msg.text:
                 msg.contentType = 7
                 msg.text = None
                 msg.contentMetadata = {
@@ -750,7 +779,7 @@ def bot(op):
                                      "STKPKGID": "1",
                                      "STKVER": "100" }
                 ks.sendMessage(msg)
-            elif "Sue" == msg.text:
+            elif "โกรธ" == msg.text:
                 msg.contentType = 7
                 msg.text = None
                 msg.contentMetadata = {
@@ -758,7 +787,7 @@ def bot(op):
                                      "STKPKGID": "1",
                                      "STKVER": "100" }
                 ks.sendMessage(msg)
-            elif "Welcome" == msg.text:
+            elif "ยินดีต้อนรับ" == msg.text:
                 msg.contentType = 7
                 msg.text = None
                 msg.contentMetadata = {
@@ -1219,7 +1248,7 @@ def bot(op):
                     else:
                         for target in targets:
                             try:
-                                KAC = [ki,kk,ks,kc,ka]
+                                KAC = [cl,ki,kk,ks,kc,ka]
                                 kicker = random.choice(KAC)
                                 kicker.kickoutFromGroup(msg.to,[target])
                                 print (msg.to,[g.mid])
@@ -1424,12 +1453,15 @@ def bot(op):
 				except:
 					pass                                 
 #-----------------------------------------------------------
-            elif "#END" in msg.text:
-                try:
-                    import sys
-                    sys.exit()
-                except:
-                    pass
+            elif msg.text in ["Delete chat"]:
+                cl.removeAllMessages(op.param2)
+                ki.removeAllMessages(op.param2)
+                kk.removeAllMessages(op.param2)
+                ks.removeAllMessages(op.param2)
+                kc.removeAllMessages(op.param2)
+                ka.removeAllMessages(op.param2)
+                cl.sendText(msg.to,"Delete Chat")
+                cl.sendText(msg.to,"Success...")
 #-----------------------------------------------------------
             elif "Spam @" in msg.text:
                 _name = msg.text.replace("Spam @","")
@@ -1437,44 +1469,44 @@ def bot(op):
                 gs = cl.getGroup(msg.to)
                 for g in gs.members:
                     if _nametarget == g.displayName:
-                       cl.sendText(msg.to,"ƠƬƜ ƧƤƛM ƬƛƦƓЄƬ 😂")
-                       ki.sendText(g.mid,"Spam  😂")  
-                       kk.sendText(g.mid,"Spam  😂")  
-                       ks.sendText(g.mid,"Spam  😂")
-                       kc.sendText(g.mid,"Spam  😂")
-                       ka.sendText(g.mid,"Spam  😂")
-                       cl.sendText(g.mid,"Spam  😂")
-                       ki.sendText(g.mid,"Spam  😂")
-                       kk.sendText(g.mid,"Spam  😂")
-                       ks.sendText(g.mid,"Spam  😂")
-                       kc.sendText(g.mid,"Spam  😂")  
-                       ka.sendText(g.mid,"Spam  😂")  
-                       cl.sendText(g.mid,"Spam  😂")
-                       ki.sendText(g.mid,"Spam  😂")
-                       kk.sendText(g.mid,"Spam  😂")
-                       ks.sendText(g.mid,"Spam  😂")
-                       kc.sendText(g.mid,"Spam  😂")
-                       ka.sendText(g.mid,"Spam  😂")
-                       cl.sendText(g.mid,"Spam  😂")
-                       ki.sendText(g.mid,"Spam  😂")  
-                       kk.sendText(g.mid,"Spam  😂")  
-                       ks.sendText(g.mid,"Spam  😂")
-                       kc.sendText(g.mid,"Spam  😂")
-                       ka.sendText(g.mid,"Spam  😂")
-                       cl.sendText(g.mid,"Spam  😂")
-                       ki.sendText(g.mid,"Spam  😂")
-                       kk.sendText(g.mid,"Spam  😂")
-                       ks.sendText(g.mid,"Spam  😂")
-                       kc.sendText(g.mid,"Spam  😂")  
-                       ka.sendText(g.mid,"Spam  😂")  
-                       cl.sendText(g.mid,"Spam  😂")
-                       ki.sendText(g.mid,"Spam  😂")
-                       kk.sendText(g.mid,"Spam  😂")
-                       ks.sendText(g.mid,"Spam  😂")
-                       kc.sendText(g.mid,"HƛHƛHƛ ƊƖ ƧƤƛM  😂")
-                       ka.sendText(g.mid,"HƛHƛHƛ ƊƖ ƧƤƛM  😂")
-                       ks.sendText(g.mid,"HƛHƛHƛ ƊƖ ƧƤƛM  😂")
-                       cl.sendText(msg.to, "ƊƠƝЄ ƧƤƛM  😂")
+                       cl.sendText(msg.to,"Spam Start")
+                       ki.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       kk.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       kc.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ka.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       cl.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ki.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       kk.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       kc.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ka.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       cl.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ki.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       kk.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       kc.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ka.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       cl.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ki.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       kk.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       kc.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ka.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       cl.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ki.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       kk.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       kc.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ka.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       cl.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ki.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       kk.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       kc.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ka.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       cl.sendText(msg.to, "Ok success")
                        print "Done spam" 
 #-----------------------------------------------------------
             elif msg.text in ["PING","Ping","ping"]:
@@ -1482,13 +1514,35 @@ def bot(op):
                 kk.sendText(msg.to,"ƤƠƝƓ 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
                 ks.sendText(msg.to,"ƤƠƝƓ 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
 #----------------------------------------------------------
-            elif msg.text in ["Respon","respon","responsename"]:
-                cl.sendText(msg.to,"ƊƛƑƬƛƦ ƛƘƲƝ ƁƠƬ ԼƖƝЄ Ɣ.2 👇👇")
-                ki.sendText(msg.to,"ƁƠƬ ԼƖƝЄ 1")
-                kk.sendText(msg.to,"ƁƠƬ ԼƖƝЄ 2")
-                ks.sendText(msg.to,"ƁƠƬ ԼƖƝЄ 3")	
-                kc.sendText(msg.to,"ƁƠƬ ԼƖƝЄ 4")
-                ka.sendText(msg.to,"ƁƠƬ ԼƖƝЄ 5")
+            elif msg.text in ["Test"]:
+                ki.sendText(msg.to,"●")
+                ki.sendText(msg.to,"●●")
+                ki.sendText(msg.to,"●●●")
+                ki.sendText(msg.to,"●●●●")
+                ki.sendText(msg.to,"●●●●●")
+                ki.sendText(msg.to,"●●●●●●")
+                kk.sendText(msg.to,"●●●●●●●")
+                kk.sendText(msg.to,"●●●●●●●●")
+                kk.sendText(msg.to,"●●●●●●●●●")
+                kk.sendText(msg.to,"●●●●●●●●●●")
+                kk.sendText(msg.to,"●●●●●●●●●●●")
+                kk.sendText(msg.to,"●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●●")
+                ka.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●●●")
+                ka.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●●●●")
+                ka.sendText(msg.to,"●Bot Working●")
+                cl.sendText(msg.to,"●( ^^)人(^^ )●")
 #----------------------------------------------------------
             elif msg.text == "Setpoint":
               if msg.from_ in admin:
@@ -1573,7 +1627,7 @@ def bot(op):
             elif "random:" in msg.text:
                 if msg.toType == 2:
                     strnum = msg.text.replace("random:","")
-                    source_str = 'abcdefghijklmnopqrstuvwxyz1234567890@:;./_][!&%$#)(=~^|'
+                    source_str = '•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•'
                     try:
                         num = int(strnum)
                         group = cl.getGroup(msg.to)
@@ -1605,7 +1659,7 @@ def bot(op):
                     except:
                         pass                
 #-----------------------------------------------
-            elif msg.text in ["Cb","ล้างดำ"]:
+            elif msg.text in ["Cb","Clearban"]:
                                 wait["blacklist"] = {}
                                 cl.sendText(msg.to,"clear")
 #-----------------------------------------------
@@ -1636,7 +1690,9 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': gCreator}
                 cl.sendMessage(msg)
-                cl.sendText(msg.to,"Creator Group")
+                cl.sendText(msg.to,"""╔══════════════
+║ผู้สร้างกลุ่ม Creator Group
+╚══════════════""")
 #-----------------------------------------------
             elif "Nk " in msg.text:
                        nk0 = msg.text.replace("Nk ","")
@@ -1650,7 +1706,7 @@ def bot(op):
                        cl.updateGroup(gs)
                        invsend = 0
                        Ticket = cl.reissueGroupTicket(msg.to)
-                       kc.acceptGroupInvitationByTicket(msg.to,Ticket)
+                       ka.acceptGroupInvitationByTicket(msg.to,Ticket)
                        time.sleep(0.2)
                        targets = []
                        for s in gs.members:
@@ -1662,10 +1718,10 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    kc.kickoutFromGroup(msg.to,[target])
+                                    ka.kickuotFromGroup(msg.to,[target])
                                     print (msg.to,[g.mid])
                                 except:
-                                    kc.leaveGroup(msg.to)
+                                    ka.leaveGroup(msg.to)
                                     gs = cl.getGroup(msg.to)
                                     gs.preventJoinByTicket = True
                                     cl.updateGroup(gs)
@@ -1676,7 +1732,7 @@ def bot(op):
                 thisgroup = cl.getGroups([msg.to])
                 Mids = [contact.mid for contact in thisgroup[0].members]
                 mi_d = Mids[:33]
-                cl.createGroup("GŘØỮP ĆØV€Ř", mi_d)
+                cl.createGroup("•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•", mi_d)
                 cl.sendText(msg.to,"Cover Group")
 #-----------------------------------------------
             elif "Spam " in msg.text:
@@ -1725,6 +1781,25 @@ def bot(op):
                         except:
                             pass
                 print "[Command]dp executed"
+#-----------------------------------------------
+            elif "Mc " in msg.text:
+                key = eval(msg.contentMetadata["MENTION"])
+                key1 = key["MENTIONEES"][0]["M"]
+                cl.sendText(msg.to,"Mc: " + key1)
+            elif "Mc: " in msg.text:
+                mmid = msg.text.replace("Mc: ","")
+                msg.contentType = 13
+                msg.contentMetadata = {"mid":mmid}
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                kk.sendMessage(msg)
+                kk.sendMessage(msg)
+                ks.sendMessage(msg)
+                ks.sendMessage(msg)
+                kc.sendMessage(msg)
+                kc.sendMessage(msg)
+                ka.sendMessage(msg)
+                ka.sendMessage(msg)
 #-----------------------------------------------
             elif "Speed" in msg.text:
                 start = time.time()
@@ -2176,30 +2251,6 @@ def bot(op):
                     print e
                     pass
                     
-#        if op.param1 in autocancel:
-#			OWN = "ua7fc5964d31f45ac75128fc2b8deb842","u406133ad4d3fbe50a2f4d51ea081d050","ua51ba06b0dd18c0bfe2cc6caa3458202","uc7f32bb28dc009916d40af87c9910ddc"
-#			if op.param2 in OWN:
-#				pass
-#			else:
-#				Inviter = op.param3.replace("",',')
-#				InviterX = Inviter.split(",")
-#				contact = cl.getContact(op.param2)
-#				cl.cancelGroupInvitation(op.param1,InviterX)
-#				ki.cancelGroupInvitation(op.param1,InviterX)
-#				kk.cancelGroupInvitation(op.param1,InviterX)
-#				ks.cancelGroupInvitation(op.param1,InviterX)
-#				kc.cancelGroupInvitation(op.param1,InviterX)
-#				ka.cancelGroupInvitation(op.param1,InviterX)
-#				cl.kickoutFromGroup(op.param1,[op.param2])
-#				ki.kickoutFromGroup(op.param1,[op.param2])
-#				kk.kickoutFromGroup(op.param1,[op.param2])
-#				ks.kickoutFromGroup(op.param1,[op.param2])
-#				kc.kickoutFromGroup(op.param1,[op.param2])
-#				ka.kickoutFromGroup(op.param1,[op.param2])
-#				wait["blacklist"][op.param2] = True
-#				f=codecs.open('st2__b.json','w','utf-8')
-#				json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-#------------------------------------------------------------------------------------
         if op.type == 32:
 			OWN = "ua7fc5964d31f45ac75128fc2b8deb842","u406133ad4d3fbe50a2f4d51ea081d050","ua51ba06b0dd18c0bfe2cc6caa3458202","uc7f32bb28dc009916d40af87c9910ddc"
 			if op.param2 in OWN:
