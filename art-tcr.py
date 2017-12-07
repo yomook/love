@@ -9,27 +9,27 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess,pickle
 
 cl = LINETCR.LINE()
-cl.login(token="EnPwTVSi1QHytkFVTNC3.JIryx4z3ry1IZHDp9TRmGW.OK4V3JoeQi8OEpPCnH7VqzxJR6bpXTrPSt/WO4l5ZfE=")
+cl.login(token="EnBvwHnVn8Uo1T0TNMi3.JIryx4z3ry1IZHDp9TRmGW.9jzk6Sq7hkNMnwMDPJxcoacXxKbwgpWlLVjJIPX9dSM=")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EncyhrUNwcZ6SIgxM0a3.N/6o2oDgZge0ng439NllSW.jTMoEG1J/bh0wrprtlWoYdgSDcCmlaY7fP5iuEIEvC0=")
+ki.login(token="EnwbfpEOErZDugOspQR3.N/6o2oDgZge0ng439NllSW.xqt3qzcMdrotc2tzmke+ct6lvJYmn6kKCcCEJOMWF3c=")
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="EnpYWEuWddqtvGzUpB79.sEpoFLrSynl1O4R/jK+r6q.0EC/EB0AzOXi5PkcoJmsZr+d7NsOlFWdbJjLPDf7FGE=")
+kk.login(token="Eni7AsQuFpfYaICJzfq9.sEpoFLrSynl1O4R/jK+r6q./apGofVsfv8Ah8F5l3QPaIxFws3CP4ETLdVfIFT2/C8=")
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="EnVV7o6nFRJ6rOVPYpp0.Yqmbk3y5dGImDYSHbIO7ia.yE5Hjo+AHjpJM9oz+gUGQFhozSaSoX7d11LaWWtcAdI=")
+ks.login(token="EnOetHTIejQuomkOI160.Yqmbk3y5dGImDYSHbIO7ia.oLCFQC2Ee6t6tFP+OF0BOo0tELcIovkSQZgSQo/gvWA=")
 ks.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(token="En7bSWt3xEAaNG4zfvm0.qTqJ/tcbW+c9xovbLqJnya.uxuDaic70JnzPM5DhT/MecHUbqQvvOVaz7alayH1aEw=")
+kc.login(token="EnUWhqfUamSuq3e2JH10.qTqJ/tcbW+c9xovbLqJnya.V5S96Jft47Vt06Tdd1LSORQvzmWwTNciqp2FsIlVQ1U=")
 kc.loginResult()
 
 ka = LINETCR.LINE()
-ka.login(token="En7ShPUWwD8zM2O53kEb.brg8qqR4cXfYLtnKj4/hgW.KNprECxqXZ2iDJ5kNutnd6dZThVzibuk8wf/tjCMFJs=")
+ka.login(token="EnnDeJKtGBOcYeIfgKsb.brg8qqR4cXfYLtnKj4/hgW.om3RG8dj6s9LhuEnncRfheVsSMsDOwBKk4HHx1h/Xp8=")
 ka.loginResult()
 
 cl
@@ -50,6 +50,7 @@ helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
 ║❂➣[Me]
 ║❂➣[Me @]
 ║❂➣[Mybot]
+║❂➣[Name Bot (Text)]
 ║❂➣[Sendcontact]
 ║❂➣[K1/K2/K3 join]
 ║❂➣[K1/K2/K3/]
@@ -805,12 +806,16 @@ def bot(op):
                     profile.displayName = string
                     cl.updateProfile(profile)
                     cl.sendText(msg.to,"The name " + string + " I did NI change。")
-            elif "Last name" in msg.text:
-                string = msg.text.replace("Last name","")
+            elif "Name Bot" in msg.text:
+                string = msg.text.replace("Name Bot","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = cl.getProfile()
                     profile.displayName = string
-                    cl.updateProfile(profile)
+                    ki.updateProfile(profile)
+                    kk.updateProfile(profile)
+                    ks.updateProfile(profile)
+                    kc.updateProfile(profile)
+                    ka.updateProfile(profile)
                     cl.sendText(msg.to,"The name " + string + " I did NI change。")
 #---------------------------------------------------------
             elif "K1 upname:" in msg.text:
@@ -1234,26 +1239,39 @@ def bot(op):
 					ka.leaveGroup(msg.to)
                 except:
                      pass            
-            elif "NK:" in msg.text:
-                if msg.toType == 2:
-                    print "ok"
-                    _name = msg.text.replace("NK:","")
-                    gs = ki.getGroup(msg.to)
-                    targets = []
-                    for g in gs.members:
-                        if _name in g.displayName:
-                            targets.append(g.mid)
-                    if targets == []:
-                        ki.sendText(msg.to,"Not found.")
-                    else:
-                        for target in targets:
-                            try:
-                                KAC = [cl,ki,kk,ks,kc,ka]
-                                kicker = random.choice(KAC)
-                                kicker.kickoutFromGroup(msg.to,[target])
-                                print (msg.to,[g.mid])
-                            except:
-                                ki.sendText(msg.to,"ЄƦƦƠƦ")
+            elif "Nk " in msg.text:
+                       nk0 = msg.text.replace("Nk ","")
+                       nk1 = nk0.lstrip()
+                       nk2 = nk1.replace("@","")
+                       nk3 = nk2.rstrip()
+                       _name = nk3
+                       gs = cl.getGroup(msg.to)
+                       ginfo = cl.getGroup(msg.to)
+                       gs.preventJoinByTicket = False
+                       cl.updateGroup(gs)
+                       invsend = 0
+                       Ticket = cl.reissueGroupTicket(msg.to)
+                       kc.acceptGroupInvitationByTicket(msg.to,Ticket)
+                       time.sleep(0.2)
+                       targets = []
+                       for s in gs.members:
+                           if _name in s.displayName:
+                              targets.append(s.mid)
+                       if targets == []:
+                           sendMessage(msg.to,"user does not exist")
+                           pass
+                       else:
+                           for target in targets:
+                                try:
+                                    kc.kickoutFromGroup(msg.to,[target])
+                                    print (msg.to,[g.mid])
+                                except:
+                                    kc.leaveGroup(msg.to)
+                                    gs = cl.getGroup(msg.to)
+                                    gs.preventJoinByTicket = True
+                                    cl.updateGroup(gs)
+                                    gs.preventJoinByTicket(gs)
+                                    cl.updateGroup(gs)
 #-----------------------------------------------------------                          
             elif "Kick" in msg.text:
                 if msg.contentMetadata is not None:
@@ -1266,11 +1284,11 @@ def bot(op):
                         try:
                             cl.kickoutFromGroup(msg.to,[target])
                         except:
-                           ki.kickoutFromGroup(msg.to,[target])
+                           cl.kickoutFromGroup(msg.to,[target])
                     else:
                         pass
             elif "K1 fuck" in msg.text:
-				OWN = "u406133ad4d3fbe50a2f4d51ea081d050"
+				OWN = "u9fee8ed8e746cc6134346e37f672cbb3"
 				if msg.from_ in OWN:
 					pass
 				else:
@@ -1296,7 +1314,7 @@ def bot(op):
 									ki.kickoutFromGroup(msg.to, [target])							   
 									pass
             elif "K2 fuck" in msg.text:
-				OWN = "ua51ba06b0dd18c0bfe2cc6caa3458202"
+				OWN = "u49e3ce7e546c60d2f5a38afe264fd1e9"
 				if msg.from_ in OWN:
 					pass
 				else:
@@ -1323,7 +1341,7 @@ def bot(op):
 									pass
 
             elif "K3 fuck" in msg.text:
-				OWN = "u34a9af3a18784280147fc413a68a77fd"
+				OWN = "uc903012b76390e088c772b21062a3b20"
 				if msg.from_ in OWN:
 					pass
 				else:
@@ -1718,10 +1736,10 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    ka.kickuotFromGroup(msg.to,[target])
+                                    kc.kickuotFromGroup(msg.to,[target])
                                     print (msg.to,[g.mid])
                                 except:
-                                    ka.leaveGroup(msg.to)
+                                    kc.leaveGroup(msg.to)
                                     gs = cl.getGroup(msg.to)
                                     gs.preventJoinByTicket = True
                                     cl.updateGroup(gs)
