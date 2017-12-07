@@ -37,7 +37,7 @@ cl
 with open('profileSave.pkl') as f:
     save1 = pickle.load(f)
 
-print "login success"
+print "login Ok"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
@@ -73,7 +73,6 @@ helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
 ║❂➣[Clock: off]
 ║❂➣[Ban]:
 ║❂➣[Unban]:
-║❂➣[Conban]
 ║❂➣[Banlist]:
 ║❂➣[Allgiftt]
 ║❂➣[Test]
@@ -1527,20 +1526,11 @@ def bot(op):
                        ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
                        cl.sendText(msg.to, "Ok success")
                        print "Done spam" 
-#----------------------------------------------------------
-            elif msg.text in ["Conban","Contactban","Contact ban"]:
-                if wait["blacklist"] == {}:
-                    cl.sendText(msg.to,"Tidak Ada Blacklist")
-                else:
-                    cl.sendText(msg.to,"Daftar Blacklist")
-                    h = ""
-                    for i in wait["blacklist"]:
-                        h = cl.getContact(i)
-                        M = Message()
-                        M.to = msg.to
-                        M.contentType = 13
-                        M.contentMetadata = {'mid': i}
-                        cl.sendMessage(M)
+#-----------------------------------------------------------
+            elif msg.text in ["PING","Ping","ping"]:
+                ki.sendText(msg.to,"ƤƠƝƓ 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
+                kk.sendText(msg.to,"ƤƠƝƓ 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
+                ks.sendText(msg.to,"ƤƠƝƓ 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
 #----------------------------------------------------------
             elif msg.text in ["Test"]:
                 ki.sendText(msg.to,"●")
