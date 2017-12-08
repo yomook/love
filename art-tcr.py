@@ -9,27 +9,27 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess,pickle
 
 cl = LINETCR.LINE()
-cl.login(token="EnsJx0ITbS8oPKShqME3.JIryx4z3ry1IZHDp9TRmGW./ppHQuxMoQoHu1UWV9WpfKvOS7znQhXzBc9VAm5ReR8=")
+cl.login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="En9Ry5x5zlBZHcDwGAZ3.N/6o2oDgZge0ng439NllSW.kZbkKVdqFwTxAVqJ2q/ZT2OD1Icr9wO+0I4VHIMNbes=")
+ki.login(qr=True)
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="EnyUBz7F1sPjHldzTez9.sEpoFLrSynl1O4R/jK+r6q.PzJAFSpglB7snKk8UqSlef9sjuSQ+HtcY6pXuMsCjxM=")
+kk.login(qr=True)
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="EnO2GN6LTjB8EXe0Vrl0.Yqmbk3y5dGImDYSHbIO7ia.qJa2BuEI854QohWxAK4v5I32fgpFxlbqo3VF35XJXBE=")
+ks.login(qr=True)
 ks.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(token="EnwyGTCAsTITb9fKygM0.qTqJ/tcbW+c9xovbLqJnya.v29JCQGZ8J/5GJ8fOgqoyGNyzr3NZrAeZdz3vEuv378=")
+kc.login(qr=True)
 kc.loginResult()
 
 ka = LINETCR.LINE()
-ka.login(token="EnMZjPLxQtsNRHB0M2jb.brg8qqR4cXfYLtnKj4/hgW.T6W6tnjm0EdYNdbMLmenAluU7oA99bO6pGlGYKlYpd0=")
+ka.login(qr=True)
 ka.loginResult()
 
 cl
@@ -44,89 +44,89 @@ helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
 ─┅═✥ᵀᴴᴬᴵᴸᴬᴺᴰ✥═┅─
     [ᴛᴇᴀᴍ ᴛᴇ̲̅s̲̅ᴛ ʙᴏᴛ]
 ╔══════════════════
-║❂➣[Id]
-║❂➣[Mid]
-║❂➣[All mid]
-║❂➣[Me]
-║❂➣[Me @]
-║❂➣[Mybot]
-║❂➣[Name Bot (Text)]
-║❂➣[Sendcontact]
-║❂➣[K1/K2/K3 join]
-║❂➣[K1/K2/K3/]
-║❂➣[K1/K2/K3 fuck:]
-║❂➣[K1/K2/K3 gift
-║❂➣[Allgift]
-║❂➣[Group Id]
-║❂➣[TL:"Text"]
-║❂➣[Clock:]
-║❂➣[Up clock]
-║❂➣[Name:'text']
-║❂➣[Mic]:"mid"]
-║❂➣[Mc @]
-║❂➣[Rejectall]
-║❂➣[Massage add:"text"]
-║❂➣[Add confirmasi]
-║❂➣[Comment set:"Text"]
-║❂➣[Comment check]
-║❂➣[Clock: on]
-║❂➣[Clock: off]
-║❂➣[Ban]:
-║❂➣[Unban]:
-║❂➣[Conban]
-║❂➣[Banlist]:
-║❂➣[Allgiftt]
-║❂➣[Test]
-║❂➣[Copy @]
-║❂➣[Save]
-║❂➣[Load]
-║❂➣[Spam on (Number) (Text)
-║❂➣[Spam off (Number) (Text)
-║❂➣[Gcreator]
-║❂➣[Covergroup]
-║❂➣[Tagall]
-║❂➣[Kicker]
-║❂➣[Setpoint]
-║❂➣[Setcheck]
-║❂➣[Kick"@tag]]
+╠❂➣[Id]
+╠❂➣[Mid]
+╠❂➣[All mid]
+╠❂➣[Me]
+╠❂➣[Me @]
+╠❂➣[Mybot]
+╠❂➣[Name Bot (Text)]
+╠❂➣[Sendcontact]
+╠❂➣[K1/K2/K3 join]
+╠❂➣[K1/K2/K3/]
+╠❂➣[K1/K2/K3 fuck:]
+╠❂➣[K1/K2/K3 gift
+╠❂➣[Allgift]
+╠❂➣[Group Id]
+╠❂➣[TL:"Text"]
+╠❂➣[Clock:]
+╠❂➣[Up clock]
+╠❂➣[Name:'text']
+╠❂➣[Mic]:"mid"]
+╠❂➣[Mc @]
+╠❂➣[Rejectall]
+╠❂➣[Massage add:"text"]
+╠❂➣[Add confirmasi]
+╠❂➣[Comment set:"Text"]
+╠❂➣[Comment check]
+╠❂➣[Clock: on]
+╠❂➣[Clock: off]
+╠❂➣[Ban]:
+╠❂➣[Unban]:
+╠❂➣[Conban]
+╠❂➣[Banlist]:
+╠❂➣[Allgiftt]
+╠❂➣[Test]
+╠❂➣[Copy @]
+╠❂➣[Save]
+╠❂➣[Load]
+╠❂➣[Spam on (Number) (Text)
+╠❂➣[Spam off (Number) (Text)
+╠❂➣[Gcreator]
+╠❂➣[Covergroup]
+╠❂➣[Tagall]
+╠❂➣[Kicker]
+╠❂➣[Setpoint]
+╠❂➣[Setcheck]
+╠❂➣[Kick"@tag]]
 ╠══════════════════
 ║─┅═✥(sᴇᴛ)ᴄᴏᴍᴍᴀɴᴅ✥═┅─
 ╠══════════════════
-║❂➣[Contact: on/off] 
-║❂➣[Auto join: on/off] 
-║❂➣[Cancel Invite: 1 on/off]
-║❂➣[Auto share: on/off]
-║❂➣[Auto leave: on/off] 
-║❂➣[Comment: on/off]
-║❂➣[Auto add: on/off]
-║❂➣[Auto like: on/off]║
+╠❂➣[Contact: on/off] 
+╠❂➣[Auto join: on/off] 
+╠❂➣[Cancel Invite: 1 on/off]
+╠❂➣[Auto share: on/off]
+╠❂➣[Auto leave: on/off] 
+╠❂➣[Comment: on/off]
+╠❂➣[Auto add: on/off]
+╠❂➣[Auto like: on/off]║
 ╠══════════════════
 ║─┅═✥ᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ✥═┅─
 ╠══════════════════
-║❂➣[Ban"@Tag] 
-║❂➣[Unban"@Tag] 
-║❂➣[Urlon]:
-║❂➣[Urloff]:
-║❂➣[Url]:
-║❂➣[Ginfo]:
-║❂➣[Invite:"mid"] 
-║❂➣[Say:"Text"]:
-║❂➣[Cancel]:
-║❂➣[Gn:"name"]:
-║❂➣[NK @tag]:
-║❂➣[Dead]
+╠❂➣[Ban"@Tag] 
+╠❂➣[Unban"@Tag] 
+╠❂➣[Urlon]:
+╠❂➣[Urloff]:
+╠❂➣[Url]:
+╠❂➣[Ginfo]:
+╠❂➣[Invite:"mid"] 
+╠❂➣[Say:"Text"]:
+╠❂➣[Cancel]:
+╠❂➣[Gn:"name"]:
+╠❂➣[NK @tag]:
+╠❂➣[Dead]
 ╠══════════════════
 ║•─✯͜͡ ᴀʀᴛʜᴜʀ★BOT
 ╠══════════════════
-║line.me/ti/p/~art-bot-cyber01
+╠line.me/ti/p/~art-bot-cyber01
 ╚══════════════════
 """
 helpMessage2 ="""•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•
 ╔═══════════════════════
-║❂➣[PROTECT: ON/OFF]:
-║❂➣[BLOCK URL: ON/OFF]:
-║❂➣[NAMELOCK: ON/OFF]:
-║❂➣[BLOCKINVITE: ON/OFF]:
+╠❂➣[PROTECT: ON/OFF]:
+╠❂➣[BLOCK URL: ON/OFF]:
+╠❂➣[NAMELOCK: ON/OFF]:
+╠❂➣[BLOCKINVITE: ON/OFF]:
 ╚═══════════════════════
 """
 KAC = [cl,ki,kk,ks,kc,ka]
