@@ -30,7 +30,7 @@ kc.loginResult()
 
 ka = LINETCR.LINE()
 ka.login(token="En4a6fFTnxgFSsHbTrQ7.MRMd87JLMY8NA0SCe7JEXW.g5WJ9Gj72yOylk6v7CE57r3/xACGiLhv/3NHQ+rdtC0=")
-ka.loginResult()
+ka.loginResult(
 
 cl
 
