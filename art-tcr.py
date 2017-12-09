@@ -32,8 +32,6 @@ ka = LINETCR.LINE()
 ka.login(qr=True)
 ka.loginResult()
 
-cl
-
 with open('profileSave.pkl') as f:
     save1 = pickle.load(f)
 
@@ -44,89 +42,89 @@ helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
 ─┅═✥ᵀᴴᴬᴵᴸᴬᴺᴰ✥═┅─
     [ᴛᴇᴀᴍ ᴛᴇ̲̅s̲̅ᴛ ʙᴏᴛ]
 ╔══════════════════
-╠❂➣[Id]
-╠❂➣[Mid]
-╠❂➣[All mid]
-╠❂➣[Me]
-╠❂➣[Me @]
-╠❂➣[Mybot]
-╠❂➣[Name Bot (Text)]
-╠❂➣[Sendcontact]
-╠❂➣[K1/K2/K3 join]
-╠❂➣[K1/K2/K3/]
-╠❂➣[K1/K2/K3 fuck:]
-╠❂➣[K1/K2/K3 gift
-╠❂➣[Allgift]
-╠❂➣[Group Id]
-╠❂➣[TL:"Text"]
-╠❂➣[Clock:]
-╠❂➣[Up clock]
-╠❂➣[Name:'text']
-╠❂➣[Mic]:"mid"]
-╠❂➣[Mc @]
-╠❂➣[Rejectall]
-╠❂➣[Massage add:"text"]
-╠❂➣[Add confirmasi]
-╠❂➣[Comment set:"Text"]
-╠❂➣[Comment check]
-╠❂➣[Clock: on]
-╠❂➣[Clock: off]
-╠❂➣[Ban]:
-╠❂➣[Unban]:
-╠❂➣[Conban]
-╠❂➣[Banlist]:
-╠❂➣[Allgiftt]
-╠❂➣[Test]
-╠❂➣[Copy @]
-╠❂➣[Save]
-╠❂➣[Load]
-╠❂➣[Spam on (Number) (Text)
-╠❂➣[Spam off (Number) (Text)
-╠❂➣[Gcreator]
-╠❂➣[Covergroup]
-╠❂➣[Tagall]
-╠❂➣[Kicker]
-╠❂➣[Setpoint]
-╠❂➣[Setcheck]
-╠❂➣[Kick"@tag]]
+║❂➣[Id]
+║❂➣[Mid]
+║❂➣[All mid]
+║❂➣[Me]
+║❂➣[Me @]
+║❂➣[Mybot]
+║❂➣[Name Bot (Text)]
+║❂➣[Sendcontact]
+║❂➣[K1/K2/K3 join]
+║❂➣[K1/K2/K3/]
+║❂➣[K1/K2/K3 fuck:]
+║❂➣[K1/K2/K3 gift
+║❂➣[Allgift]
+║❂➣[Group Id]
+║❂➣[TL:"Text"]
+║❂➣[Clock:]
+║❂➣[Up clock]
+║❂➣[Name:'text']
+║❂➣[Mic]:"mid"]
+║❂➣[Mc @]
+║❂➣[Rejectall]
+║❂➣[Massage add:"text"]
+║❂➣[Add confirmasi]
+║❂➣[Comment set:"Text"]
+║❂➣[Comment check]
+║❂➣[Clock: on]
+║❂➣[Clock: off]
+║❂➣[Ban]:
+║❂➣[Unban]:
+║❂➣[Conban]
+║❂➣[Banlist]:
+║❂➣[Allgiftt]
+║❂➣[Test]
+║❂➣[Copy @]
+║❂➣[Save]
+║❂➣[Load]
+║❂➣[Spam on (Number) (Text)
+║❂➣[Spam off (Number) (Text)
+║❂➣[Gcreator]
+║❂➣[Covergroup]
+║❂➣[Tagall]
+║❂➣[Kicker]
+║❂➣[Setpoint]
+║❂➣[Setcheck]
+║❂➣[Kick"@tag]]
 ╠══════════════════
 ║─┅═✥(sᴇᴛ)ᴄᴏᴍᴍᴀɴᴅ✥═┅─
 ╠══════════════════
-╠❂➣[Contact: on/off] 
-╠❂➣[Auto join: on/off] 
-╠❂➣[Cancel Invite: 1 on/off]
-╠❂➣[Auto share: on/off]
-╠❂➣[Auto leave: on/off] 
-╠❂➣[Comment: on/off]
-╠❂➣[Auto add: on/off]
-╠❂➣[Auto like: on/off]║
+║❂➣[Contact: on/off] 
+║❂➣[Auto join: on/off] 
+║❂➣[Cancel Invite: 1 on/off]
+║❂➣[Auto share: on/off]
+║❂➣[Auto leave: on/off] 
+║❂➣[Comment: on/off]
+║❂➣[Auto add: on/off]
+║❂➣[Auto like: on/off]║
 ╠══════════════════
 ║─┅═✥ᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ✥═┅─
 ╠══════════════════
-╠❂➣[Ban"@Tag] 
-╠❂➣[Unban"@Tag] 
-╠❂➣[Urlon]:
-╠❂➣[Urloff]:
-╠❂➣[Url]:
-╠❂➣[Ginfo]:
-╠❂➣[Invite:"mid"] 
-╠❂➣[Say:"Text"]:
-╠❂➣[Cancel]:
-╠❂➣[Gn:"name"]:
-╠❂➣[NK @tag]:
-╠❂➣[Dead]
+║❂➣[Ban"@Tag] 
+║❂➣[Unban"@Tag] 
+║❂➣[Urlon]:
+║❂➣[Urloff]:
+║❂➣[Url]:
+║❂➣[Ginfo]:
+║❂➣[Invite:"mid"] 
+║❂➣[Say:"Text"]:
+║❂➣[Cancel]:
+║❂➣[Gn:"name"]:
+║❂➣[NK @tag]:
+║❂➣[Dead]
 ╠══════════════════
 ║•─✯͜͡ ᴀʀᴛʜᴜʀ★BOT
 ╠══════════════════
-╠line.me/ti/p/~art-bot-cyber01
+║line.me/ti/p/~art-bot-cyber01
 ╚══════════════════
 """
 helpMessage2 ="""•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•
 ╔═══════════════════════
-╠❂➣[PROTECT: ON/OFF]:
-╠❂➣[BLOCK URL: ON/OFF]:
-╠❂➣[NAMELOCK: ON/OFF]:
-╠❂➣[BLOCKINVITE: ON/OFF]:
+║❂➣[PROTECT: ON/OFF]:
+║❂➣[BLOCK URL: ON/OFF]:
+║❂➣[NAMELOCK: ON/OFF]:
+║❂➣[BLOCKINVITE: ON/OFF]:
 ╚═══════════════════════
 """
 KAC = [cl,ki,kk,ks,kc,ka]
@@ -362,16 +360,16 @@ def bot(op):
 					ki.kickoutFromGroup(op.param1,[op.param2])
 					kk.kickoutFromGroup(op.param1,[op.param2])
 					ks.kickoutFromGroup(op.param1,[op.param2])
-		if op.type == 32:
+		"""if op.type == 32:
 			if mid in op.param3:
-				wait["blacklist"][op.param2] == True
-		if op.type == 32:
+				wait["blacklist"][op.param2] == True"""
+		"""if op.type == 32:
 			if mid in op.param3:
 				if wait["blacklist"] == True:
 					cl.kickoutFromGroup(op.param1,[op.param2])
 					ki.kickoutFromGroup(op.param1,[op.param2])
 					kk.kickoutFromGroup(op.param1,[op.param2])
-					ks.kickoutFromGroup(op.param1,[op.param2])
+					ks.kickoutFromGroup(op.param1,[op.param2])"""
 		if op.type == 25:
 			if mid in op.param3:
 				wait["blacklist"][op.param2] == True
@@ -1780,36 +1778,6 @@ def bot(op):
                     else:
                         cl.sendText(msg.to, "Out Of Range!")
 #-----------------------------------------------
-            elif "Steal dp @" in msg.text:
-                nama = msg.text.replace("Steal dp @","")
-                target = nama.rstrip(' ')
-                van = cl.getGroup(msg.to)
-                for linedev in van.members:
-                    if target == linedev.displayName:
-                        midddd = cl.getContact(linedev.mid)
-                        PATH = "http://dl.profile.line-cdn.net/" + midddd.pictureStatus
-                    cl.sendImageWithURL(msg.to,PATH)
-#-----------------------------------------------
-            elif "Steal home @" in msg.text:
-                print "[Command]dp executing"
-                _name = msg.text.replace("Steal home @","")
-                gs = cl.getGroup(msg.to)
-                targets = []
-                for g in gs.members:
-                    if _nametarget == g.displayName:
-                        targets.append(g.mid)
-                if targets == []:                                                                   ki.sendText(msg.to,"Contact not found")
-                else:
-                    for target in targets:
-                        try:
-                            contact = cl.getContact(target)
-                            cu = cl.channel.getCover(target)
-                            path = str(cu)
-                            cl.sendImageWithURL(msg.to, path)
-                        except:
-                            pass
-                print "[Command]dp executed"
-#-----------------------------------------------
             elif "Mc " in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
@@ -1907,6 +1875,42 @@ def bot(op):
                         cl.updateDisplayPicture(me.pictureStatus)
                         cl.updateProfile(me)
                         cl.sendText(msg.to,"สำเร็จแล้ว")
+            elif "Steal dp " in msg.text:
+                if msg.toType == 2:
+                    red = re.compile(re.escape('steal dp '),re.IGNORECASE)
+                    namel = red.sub('',msg.text)
+                    namel = namel.lstrip()
+                    namel = namel.replace(" @","$spliter$")
+                    namel = namel[1:]
+                    namel = namel.rstrip()
+                    namel = namel.split("$spliter$")
+                    gmem = cl.getGroup(msg.to).members
+                    for targ in gmem:
+                        if targ.displayName in namel:
+                            if targ.displayName != '':
+                                cl.sendText(msg.to,targ.displayName)
+                            try:
+                                cl.sendImageWithURL(msg.to,"http://dl.profile.line.naver.jp/"+targ.pictureStatus)
+                            except:
+                                pass
+            elif "Steal home " in msg.text:
+                if msg.toType == 2:
+                    red = re.compile(re.escape('steal home '),re.IGNORECASE)
+                    namel = red.sub('',msg.text)
+                    namel = namel.lstrip()
+                    namel = namel.replace(" @","$spliter$")
+                    namel = namel[1:]
+                    namel = namel.rstrip()
+                    namel = namel.split("$spliter$")
+                    gmem = cl.getGroup(msg.to).members
+                    for targ in gmem:
+                        if targ.displayName in namel:
+                            if targ.displayName != '':
+                                cl.sendText(msg.to,targ.displayName)
+                            try:
+                                cl.sendImageWithURL(msg.to,cl.channel.getCover(targ.mid))
+                            except:
+                                pass
         if op.type == 19:
             try:
                 if op.param3 in mid:
@@ -2279,7 +2283,7 @@ def bot(op):
                     print e
                     pass
                     
-        if op.type == 32:
+        """if op.type == 32:
 			OWN = "ua7fc5964d31f45ac75128fc2b8deb842","u406133ad4d3fbe50a2f4d51ea081d050","ua51ba06b0dd18c0bfe2cc6caa3458202","uc7f32bb28dc009916d40af87c9910ddc"
 			if op.param2 in OWN:
 				pass
@@ -2294,7 +2298,7 @@ def bot(op):
 				ka.kickoutFromGroup(op.param1,[op.param2])
 				wait["blacklist"][op.param2] = True
 				f=codecs.open('st2__b.json','w','utf-8')
-				json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
+				json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)"""
 #------------------------------------------------------------------------------------
         if op.type == 55:
             try:

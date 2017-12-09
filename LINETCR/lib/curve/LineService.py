@@ -12,6 +12,7 @@ from ttypes import *
 from thrift.Thrift import TProcessor
 from thrift.transport import TTransport
 from thrift.protocol import TBinaryProtocol, TProtocol
+import unicodedata
 try:
   from thrift.protocol import fastbinary
 except:
@@ -61625,6 +61626,7 @@ class loginWithVerifierForCerificate_args:
     oprot.writeStructBegin('loginWithVerifierForCerificate_args')
     if self.verifier is not None:
       oprot.writeFieldBegin('verifier', TType.STRING, 3)
+      self.verifier = unicodedata.normalize('NFKD', self.verifier).encode('ascii','ignore')
       oprot.writeString(self.verifier)
       oprot.writeFieldEnd()
     oprot.writeFieldStop()
