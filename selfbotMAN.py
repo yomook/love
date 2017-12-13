@@ -370,7 +370,19 @@ def bot(op):
                     cl.cancelGroupInvitation(op.param1, matched_list)
                     kk.cancelGroupInvitation(op.param1, matched_list)
                     ks.cancelGroupInvitation(op.param1, matched_list)
-                    
+
+        if op.type == 15:
+            if op.param2 in bot1:
+                return
+            cl.sendText(op.param1,"Ɓy℮ Bye ☛" + cl.getContact(op.param2).displayName + "☚ 〆(・∀・＠)")
+            print ("MEMBER HAS LEFT THE GROUP")
+
+        if op.type == 19:
+            if op.param2 in bot1:
+                return
+            cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ☚ ซัดเต็มข้อเลยครับ ท่านผู้ชม")
+            print "MEMBER KICK OUT FORM GROUP"
+
         if op.type == 17:
             if mid in op.param3:
                     group = cl.getGroup(msg.to)
@@ -503,7 +515,7 @@ def bot(op):
 					json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
 				else:
 					pass                
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
@@ -1263,7 +1275,7 @@ def bot(op):
                     cl.sendText(msg.to,"line://ti/g/" + gurl)
                 else:
                     cl.sendText(msg.to,"ƖƬ ƇƛƝ'Ƭ ƁЄ ƲƧЄƊ ƁЄƧƖƊЄƧ ƬHЄ ƓƦƠƲƤ。")
-            elif msg.text in ["Gurl"]:
+            elif msg.text in ["Link url"]:
                 if msg.toType == 2:
                     x = ki.getGroup(msg.to)
                     if x.preventJoinByTicket == True:
@@ -1325,7 +1337,7 @@ def bot(op):
                     cl.sendText(msg.to,"It was renewed。")
                 else:
                     cl.sendText(msg.to,"Please turn on a name clock.。")
-            elif "Tagall" in msg.text:
+            elif "Man @tag" in msg.text:
                 group = cl.getGroup(msg.to)
                 k = len(group.members)//100
                 for j in xrange(k+1):
@@ -1351,6 +1363,13 @@ def bot(op):
                   ks.acceptGroupInvitationByTicket(msg.to,Ti)
                   kc.acceptGroupInvitationByTicket(msg.to,Ti)
                   ka.acceptGroupInvitationByTicket(msg.to,Ti)
+                  km.acceptGroupInvitationByTicket(msg.to,Ti)
+                  kn.acceptGroupInvitationByTicket(msg.to,Ti)
+                  ko.acceptGroupInvitationByTicket(msg.to,Ti)
+                  kp.acceptGroupInvitationByTicket(msg.to,Ti)
+                  kq.acceptGroupInvitationByTicket(msg.to,Ti)
+                  kr.acceptGroupInvitationByTicket(msg.to,Ti)
+                  kj.acceptGroupInvitationByTicket(msg.to,Ti)
                   G = cl.getGroup(msg.to)
                   G.preventJoinByTicket = True
                   cl.updateGroup(G)
@@ -1400,10 +1419,17 @@ def bot(op):
 					ks.leaveGroup(msg.to)
 					kc.leaveGroup(msg.to)
 					ka.leaveGroup(msg.to)
+                                        km.leaveGroup(msg.to)
+					kn.leaveGroup(msg.to)
+					ko.leaveGroup(msg.to)
+					kp.leaveGroup(msg.to)
+					kq.leaveGroup(msg.to)
+                                        kr.leaveGroup(msg.to)
+					kj.leaveGroup(msg.to)
                 except:
                      pass            
-            elif "Nk " in msg.text:
-                       nk0 = msg.text.replace("Nk ","")
+            elif "??¿ " in msg.text:
+                       nk0 = msg.text.replace("??¿ ","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
@@ -1414,7 +1440,7 @@ def bot(op):
                        cl.updateGroup(gs)
                        invsend = 0
                        Ticket = cl.reissueGroupTicket(msg.to)
-                       kc.acceptGroupInvitationByTicket(msg.to,Ticket)
+                       ki.acceptGroupInvitationByTicket(msg.to,Ticket)
                        time.sleep(0.2)
                        targets = []
                        for s in gs.members:
@@ -1426,10 +1452,10 @@ def bot(op):
                        else:
                            for target in targets:
                                 try:
-                                    kc.kickoutFromGroup(msg.to,[target])
+                                    ki.kickoutFromGroup(msg.to,[target])
                                     print (msg.to,[g.mid])
                                 except:
-                                    kc.leaveGroup(msg.to)
+                                    ki.leaveGroup(msg.to)
                                     gs = cl.getGroup(msg.to)
                                     gs.preventJoinByTicket = True
                                     cl.updateGroup(gs)
@@ -1451,7 +1477,7 @@ def bot(op):
                     else:
                         pass
             elif "K1 fuck" in msg.text:
-				OWN = "u9fee8ed8e746cc6134346e37f672cbb3"
+				OWN = "u84eaf58cd49bff840407abe3fc4db59c"
 				if msg.from_ in OWN:
 					pass
 				else:
@@ -1477,7 +1503,7 @@ def bot(op):
 									ki.kickoutFromGroup(msg.to, [target])							   
 									pass
             elif "K2 fuck" in msg.text:
-				OWN = "u49e3ce7e546c60d2f5a38afe264fd1e9"
+				OWN = "ud186e0db54125e86130c8219a739e8a1"
 				if msg.from_ in OWN:
 					pass
 				else:
@@ -1504,7 +1530,7 @@ def bot(op):
 									pass
 
             elif "K3 fuck" in msg.text:
-				OWN = "uc903012b76390e088c772b21062a3b20"
+				OWN = "ub5511376daa821f14e7097bc2d7e90aa"
 				if msg.from_ in OWN:
 					pass
 				else:
@@ -1734,7 +1760,7 @@ def bot(op):
                 ka.sendText(msg.to,"●Bot Working●")
                 cl.sendText(msg.to,"●( ^^)人(^^ )●")
 #----------------------------------------------------------
-            elif msg.text == "Setpoint":
+            elif msg.text == "แอบ":
               if msg.from_ in admin:
                 cl.sendText(msg.to, "sᴇᴛ ᴛʜᴇ ʟᴀsᴛsᴇᴇɴs' ᴘᴏɪɴᴛ(｀・ω・´)")
                 try:
@@ -1745,10 +1771,10 @@ def bot(op):
                 now2 = datetime.now()
                 wait2['readPoint'][msg.to] = msg.id
                 wait2['readMember'][msg.to] = ""
-                wait2['setTime'][msg.to] = datetime.strftime(now2,"%H:%M")
+                wait2['setTime'][msg.to] = datetime.strftime(now2,'%d-%m-%Y📅 ↔ ⏰%H:%M:%S') 
                 wait2['ROM'][msg.to] = {}
                 print wait2
-            elif msg.text == "Setcheck":
+            elif msg.text == "อ่าน":
               if msg.from_ in admin:
 		  if msg.to in wait2['readPoint']:
 	            if wait2["ROM"][msg.to].items() == []:
@@ -1801,13 +1827,13 @@ def bot(op):
                         return
                     for jj in matched_list:
                         try:
-                            klist=[cl,ki,kk,ks,kc,ka]
+                            klist=[cl,ki,kk,ks,kc,ka,km,kn,ko,kp,kq,kr,kj]
                             kicker=random.choice(klist)
                             kicker.kickoutFromGroup(msg.to,[jj])
                             print (msg.to,[jj])
                         except:
                             pass							
-            elif msg.text in ["single"]:
+            elif msg.text in ["Single"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     gMembMids = [contact.mid for contact in group.invitee]
@@ -1853,9 +1879,9 @@ def bot(op):
                                 wait["blacklist"] = {}
                                 cl.sendText(msg.to,"clear")
 #-----------------------------------------------
-            elif "Me @" in msg.text:
+            elif "Contact @" in msg.text:
                 msg.contentType = 13
-                _name = msg.text.replace("Me @","")
+                _name = msg.text.replace("Contact @","")
                 _nametarget = _name.rstrip(' ')
                 gs = cl.getGroup(msg.to)
                 for g in gs.members:
@@ -1981,26 +2007,35 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {"mid":mmid}
                 ki.sendMessage(msg)
-                ki.sendMessage(msg)
-                kk.sendMessage(msg)
                 kk.sendMessage(msg)
                 ks.sendMessage(msg)
-                ks.sendMessage(msg)
-                kc.sendMessage(msg)
                 kc.sendMessage(msg)
                 ka.sendMessage(msg)
-                ka.sendMessage(msg)
+                km.sendMessage(msg)
+                kn.sendMessage(msg)
+                ko.sendMessage(msg)
+                kp.sendMessage(msg)
+                kq.sendMessage(msg)
+                kr.sendMessage(msg)
+                kj.sendMessage(msg)                        
 #-----------------------------------------------
             elif "Speed" in msg.text:
                 start = time.time()
                 cl.sendText(msg.to, "ᴘʀᴏɢʀᴇss...")
                 elapsed_time = time.time() - start
-                cl.sendText(msg.to, "%sseconds" % (elapsed_time))    
-                ki.sendText(msg.to, "%sseconds" % (elapsed_time))    
-                kk.sendText(msg.to, "%sseconds" % (elapsed_time))    
-                ks.sendText(msg.to, "%sseconds" % (elapsed_time))    
-                kc.sendText(msg.to, "%sseconds" % (elapsed_time))    
-                ka.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                cl.sendText(msg.to, "%sseconds" % (elapsed_time))
+                ki.sendText(msg.to, "%sseconds" % (elapsed_time))
+                kk.sendText(msg.to, "%sseconds" % (elapsed_time))
+                ks.sendText(msg.to, "%sseconds" % (elapsed_time))
+                kc.sendText(msg.to, "%sseconds" % (elapsed_time))
+                ka.sendText(msg.to, "%sseconds" % (elapsed_time))
+                km.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                kn.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                ko.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                kp.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                kq.sendText(msg.to, "%sseconds" % (elapsed_time))
+                kr.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                kj.sendText(msg.to, "%sseconds" % (elapsed_time))
 #-----------------------------------------------
             elif "Sp" in msg.text:
                 start = time.time()
@@ -2097,9 +2132,9 @@ def bot(op):
 
                 elif op.param3 in op.param3:
                     if op.param1 in protection:
-                        OWN = "u2144f4eca089e5888899ad5d0551c085","u406133ad4d3fbe50a2f4d51ea081d050","ua51ba06b0dd18c0bfe2cc6caa3458202","u34a9af3a18784280147fc413a68a77fd"
+                        OWN = "ud24af63fd62d14c3bf8f719df80c3745","u84eaf58cd49bff840407abe3fc4db59c","ud186e0db54125e86130c8219a739e8a1","ub5511376daa821f14e7097bc2d7e90aa","u2b8cc0e7eb9e1acdd76ac52cbd304de3","u4be0d0fa6d209732889a5c86df184b0a","u1642bb26466ae4c647d723692030b418","u81e8c0945d7c86244b31e8f70e45d6e2","uaffb56a754f810d1ca7c49658503744b","ua6153d8c9daa16d799a19716ed0e50f8","ub2d390fda0c7ec03373009a97debe6f9","u69e29260fae1bae30db65dc8c24c0f16","ud55447120723d599b2bce2d67b14eb08"
                     if op.param2 in OWN:
-                        kicker1 = [cl,ki,kk,ks,kc,ka,km,kn,ko]
+                        kicker1 = [cl,ki,kk,ks,kc,ka,km,kn,ko,kp,kq,kr,kj]
                         G = random.choice(kicker1).getGroup(op.param1)
                         G.preventJoinByTicket = False
                         random.choice(kicker1).updateGroup(G)
@@ -2433,7 +2468,7 @@ def bot(op):
                 try:
 					group.name = wait["pro_name"][op.param1]
 					cl.updateGroup(group)
-					cl.sendText(op.param1, "Groupname protect now")
+                                        cl.sendText(op.param1, "Groupname protect now")
 					wait["blacklist"][op.param2] = True
 					f=codecs.open('st2__b.json','w','utf-8')
 					json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
@@ -2442,19 +2477,26 @@ def bot(op):
                     pass
                     
         if op.type == 32:
-			OWN = "ua7fc5964d31f45ac75128fc2b8deb842","u406133ad4d3fbe50a2f4d51ea081d050","ua51ba06b0dd18c0bfe2cc6caa3458202","uc7f32bb28dc009916d40af87c9910ddc"
+                         OWN = "ud24af63fd62d14c3bf8f719df80c3745","u84eaf58cd49bff840407abe3fc4db59c","ud186e0db54125e86130c8219a739e8a1","ub5511376daa821f14e7097bc2d7e90aa","u2b8cc0e7eb9e1acdd76ac52cbd304de3","u4be0d0fa6d209732889a5c86df184b0a","u1642bb26466ae4c647d723692030b418","u81e8c0945d7c86244b31e8f70e45d6e2","uaffb56a754f810d1ca7c49658503744b","ua6153d8c9daa16d799a19716ed0e50f8","ub2d390fda0c7ec03373009a97debe6f9","u69e29260fae1bae30db65dc8c24c0f16","ud55447120723d599b2bce2d67b14eb08" 
 			if op.param2 in OWN:
 				pass
 			else:
 				Inviter = op.param3.replace("",',')
 				InviterX = Inviter.split(",")
 				contact = cl.getContact(op.param2)
-				ki.kickoutFromGroup(op.param1,[op.param2])
-				kk.kickoutFromGroup(op.param1,[op.param2])
-				ks.kickoutFromGroup(op.param1,[op.param2])
-				kc.kickoutFromGroup(op.param1,[op.param2])
-				ka.kickoutFromGroup(op.param1,[op.param2])
-				wait["blacklist"][op.param2] = True
+                                ki.kickoutFromGroup(op.param1,[op.param2])
+                                kk.kickoutFromGroup(op.param1,[op.param2])
+                                ks.kickoutFromGroup(op.param1,[op.param2])
+                                kc.kickoutFromGroup(op.param1,[op.param2])
+                                ka.kickoutFromGroup(op.param1,[op.param2])
+                                km.kickoutFromGroup(op.param1,[op.param2])
+                                kn.kickoutFromGroup(op.param1,[op.param2])
+                                ko.kickoutFromGroup(op.param1,[op.param2])
+                                kp.kickoutFromGroup(op.param1,[op.param2])
+                                kq.kickoutFromGroup(op.param1,[op.param2])
+                                kr.kickoutFromGroup(op.param1,[op.param2])
+                                kj.kickoutFromGroup(op.param1,[op.param2])
+			        wait["blacklist"][op.param2] = True
 				f=codecs.open('st2__b.json','w','utf-8')
 				json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
 #------------------------------------------------------------------------------------
