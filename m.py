@@ -9,28 +9,56 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess,pickle
 
 cl = LINETCR.LINE()
-cl.login(token="EnjV0lkIgJaPOre9alPc.YLgVP2FFH7O3buLlL8m1xa.F1w5Aw/SAh3azyyuQohi59nCWPUJl1Q9ZaJKq6yIzJ4=") 
+cl..login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="Eno4LlPBgEWRYW6wTbMe.5PY2FbmneedLIGK6BpqDdG.u01ac57rwXLWf0B91XHfVkVrJnIcg3qmTBvXhoBp/tg=")
+ki.login(qr=True)
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="En6aBrSt97CC7Z1zSaT0.8V1Jta/418TBYgV16PxNGa.7wluZ6NAb7KPAe1CAtc9CCcaATNA4HVr3+FNi7Lm9xw=")
+kk.login(qr=True)
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="En6aBrSt97CC7Z1zSaT0.8V1Jta/418TBYgV16PxNGa.7wluZ6NAb7KPAe1CAtc9CCcaATNA4HVr3+FNi7Lm9xw=")
+ks.login(qr=True)
 ks.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(token="EnNoClpkh8uxESX2VZ3c.IWE6TFRbRpl7PjW2in5ZNa.qjNOALJB+vQmKZ1tEFQT153ti2GL1fi7m+DbxRMkWv0=")
+kc.login(qr=True)
 kc.loginResult()
 
 ka = LINETCR.LINE()
-ka.login(token="EnO84GK8uO6eTG0i2a37.MRMd87JLMY8NA0SCe7JEXW.TekDEDvOLIrVkeuZgywshCIwFEwzahlIyTHjuAjfKLA=")
+ka.login(qr=True)
 ka.loginResult()
+
+km = LINETCR.LINE()
+km.login(qr=True)
+km.loginResult()
+
+kn = LINETCR.LINE()
+kn.login(qr=True)
+kn.loginResult()
+
+ko = LINETCR.LINE()
+ko.login(qr=True)
+ko.loginResult()
+
+kp = LINETCR.LINE()
+kp.login(qr=True)
+kp.loginResult()
+
+kq = LINETCR.LINE()
+kq.login(qr=True)
+kq.loginResult()
+
+kr = LINETCR.LINE()
+kr.login(qr=True)
+kr.loginResult()
+
+kj = LINETCR.LINE()
+kj.login(qr=True)
+kj.loginResult()
 
 cl
 
@@ -40,124 +68,162 @@ with open('profileSave.pkl') as f:
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
-─┅═✥ᵀᴴᴬᴵᴸᴬᴺᴰ✥═┅─
-    [ᴛᴇᴀᴍ ᴛᴇ̲̅s̲̅ᴛ ʙᴏᴛ]
-╔══════════════════
-╠❂➣[Id]
-╠❂➣[Mid]
-╠❂➣[All mid]
-╠❂➣[Me]
-╠❂➣[Me @]
-╠❂➣[Mybot]
-╠❂➣[Name Bot (Text)]
-╠❂➣[Sendcontact]
-╠❂➣[K1/K2/K3 join]
-╠❂➣[K1/K2/K3/]
-╠❂➣[K1/K2/K3 fuck:]
-╠❂➣[K1/K2/K3 gift
-╠❂➣[Allgift]
-╠❂➣[Group Id]
-╠❂➣[TL:"Text"]
-╠❂➣[Clock:]
-╠❂➣[Up clock]
-╠❂➣[Name:'text']
-╠❂➣[Mic]:"mid"]
-╠❂➣[Mc @]
-╠❂➣[Rejectall]
-╠❂➣[Massage add:"text"]
-╠❂➣[Add confirmasi]
-╠❂➣[Comment set:"Text"]
-╠❂➣[Comment check]
-╠❂➣[Clock: on]
-╠❂➣[Clock: off]
-╠❂➣[Ban]:
-╠❂➣[Unban]:
-╠❂➣[Conban]
-╠❂➣[Banlist]:
-╠❂➣[Allgiftt]
-╠❂➣[Test]
-╠❂➣[Copy @]
-╠❂➣[Save]
-╠❂➣[Load]
+helpMessage =""" Mr. Bots…⛿
+╔══╦═╦═╗
+║║║║║║║║
+║║║║╦║║║
+╚╩╩╩╩╩╩╝ ᵀᴴᴬᴵᴸᴬᴺᴰ Creator
+📧http://line.me/R/ti/p/%40ypr5531u
+╔════════════════════
+║  [C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅] ☛ Iɴ ᴛʜᴇ ɢʀᴏᴜᴘ
+╠════════════════════
+╠❂➣[ID]   Selfbot-MAN
+╠❂➣[Ginfo]:  •ใอดี:กลุ่ม:ผุ้สร้าง
+╠❂➣[Mid]  •MID ผู้ควบคุมบอท
+╠❂➣[Me]  •Send contact Me
+╠❂➣[Me @] •Send contact @tag
+╠❂➣[Man @tag]   •แท๊กรายชื่อสมาชิกกลุ่ม
+╠❂➣[Message add: ] Set message ADD
+╠❂➣[Add confirmasi]  I do notknow
+╠❂➣[Comment set: ]Set message LIKE
+╠❂➣[Comment check] •Cheak Text Like
+╠❂➣[Link on]:  •Open Link group
+╠❂➣[Link off]:  •Close Link group
+╠❂➣[Link url]:  •Link GROUP.
+╠❂➣[Invite: 'mid'] •เชิญด้วย (MID)ระบุ
+╠❂➣[Kick: 'mid'] •เตะๆ ด้วย (MID)ระบุ
+╠❂➣[Say: ]  •บอทพูดตาม / Say: MAN
+╠❂➣[Cancel]:[Cl]  •ยกเลิก ค้างเชิญ'
+╠❂➣[Gn:"………": •เปลี่ยนชื่อกลุ่ม
+╠❂➣[NK @tag]: เตะ @แท๊กระบุ
+╠❂➣[Copy]  •Copy to "Chat" 
+╠❂➣[Copy @]  •Copy to Group
+╠❂➣[Save]. •บันทึกสำเนา
+╠❂➣[Load]. •คืนค่าบัญชีหลัก
 ╠❂➣[Spam on (Number) (Text)
 ╠❂➣[Spam off (Number) (Text)
-╠❂➣[Gcreator]
+╠❂➣[Gcreator] •เช็คสถานะ ใอดี,ผู้สร้างกลุ่ม
 ╠❂➣[Covergroup]
-╠❂➣[Tagall]
-╠❂➣[Kicker]
-╠❂➣[Setpoint]
-╠❂➣[Setcheck]
-╠❂➣[Kick"@tag]]
-╠══════════════════
-║─┅═✥(sᴇᴛ)ᴄᴏᴍᴍᴀɴᴅ✥═┅─
-╠══════════════════
-╠❂➣[Contact: on/off] 
-╠❂➣[Auto join: on/off] 
-╠❂➣[Cancel Invite: 1 on/off]
-╠❂➣[Auto share: on/off]
-╠❂➣[Auto leave: on/off] 
-╠❂➣[Comment: on/off]
-╠❂➣[Auto add: on/off]
-╠❂➣[Auto like: on/off]║
-╠══════════════════
-║─┅═✥ᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ✥═┅─
-╠══════════════════
-╠❂➣[Ban"@Tag] 
-╠❂➣[Unban"@Tag] 
-╠❂➣[Urlon]:
-╠❂➣[Urloff]:
-╠❂➣[Url]:
-╠❂➣[Ginfo]:
-╠❂➣[Invite:"mid"] 
-╠❂➣[Say:"Text"]:
-╠❂➣[Cancel]:
-╠❂➣[Gn:"name"]:
-╠❂➣[NK @tag]:
-╠❂➣[Dead]
-╠══════════════════
-║•─✯͜͡ ᴀʀᴛʜᴜʀ★BOT
-╠══════════════════
-╠line.me/ti/p/~art-bot-cyber01
-╚══════════════════
+╠❂➣[Man @tag] @แท๊กสมาชิก ทั้งกลุ่ม
+╠❂➣[Ss],[ใครแอบ] Setpoint
+╠❂➣[Vv].[เช็คอ่าน ]Setcheck
+╠═════════════════════
+║ [C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅] ☛ S E T T I N G ☚
+╠═════════════════════
+╠❂➣[Contact:  『on/off』
+╠❂➣[Auto join:  『on/off』
+╠❂➣[Cancel Invite: 1 on/off
+╠❂➣[Auto share:   『on/off』
+╠❂➣[Auto leave:   『on/off』
+╠❂➣[Comment:  『on/off』
+╠❂➣[Auto add:  『on/off』
+╠❂➣[Auto like:  『on/off』
+╠════════════════════
+║[C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅] ☛ κɪcκєʀ☠️Bot ᴸᶤᶰᵉ
+╠════════════════════
+╠❂➣[Mybot] •Send contact BOT
+╠❂➣[Sendcontact]•ContactBOT&ME
+╠❂➣[Name Bot: ]  •Name the bot
+╠❂➣[All mid]  •MID Bot kicker
+╠❂➣[Me @] •Send contact @tag
+╠❂➣[Kicker}   • บอทเข้ากลุ่ม
+╠❂➣[Bye]   • บอทออก
+
+╠❂➣[ผีเข้า]+[ผีออก]………………………………
+╠❂➣[คิกผี]…………………………………………………
+╠❂➣[ผียกเชิญ]………………………………………… 
+╠❂➣[??¿ @] •บอทผี เข้าเตะ แล้วออก
+
+╠❂➣[K1/K2..K gn: ]   •Up name group
+╠❂➣[K1/K2..K12 in]  •Bot Join group
+╠❂➣[K1/K2..K12 fuck:]  •Bot KICK
+╠❂➣[K1/K2..K5 gift] •Bot send a gift
+╠❂➣[Gift all]  •All bots send gifts.
+╠❂➣[Test][Deag][Nk @][Kick @][Fuck @]
+K1-K2-K3-K4-K5-K6-K7-K8-K9-K10-K11-K12
+╠════════════════════
+║ •✯͜͡✍️$ëlf☠️฿❂T☠️ℳѦれ☆۰۪۫
+╠════════════════════
+╠line.me/ti/p/~1ove..neverdie
+╚════════════════════
 """
 helpMessage2 ="""•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•
-╔═══════════════════════
-╠❂➣[PROTECT: ON/OFF]:
+
+╠════════════════════ 
 ╠❂➣[BLOCK URL: ON/OFF]:
 ╠❂➣[NAMELOCK: ON/OFF]:
 ╠❂➣[BLOCKINVITE: ON/OFF]:
 ╚═══════════════════════
-"""
-KAC = [cl,ki,kk,ks,kc,ka]
+""" 
+KAC = [cl,ki,kk,ks,kc,ka,km,kn,ko,kp,kq,kr,kj]
+KAB1 = ki.getProfile().mid
+KAB2 = kk.getProfile().mid
+KAB3 = ks.getProfile().mid
+KAB4 = kc.getProfile().mid
+KAB5 = ka.getProfile().mid
+KAB6 = km.getProfile().mid
+KAB7 = kn.getProfile().mid
+KAB8 = ko.getProfile().mid
+KAB9 = kp.getProfile().mid
+KAB10 = kq.getProfile().mid
+KAB11 = kr.getProfile().mid
+KAB12 = kj.getProfile().mid
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 kimid = kk.getProfile().mid
 ki2mid = ks.getProfile().mid
 Cmid = kc.getProfile().mid
 Emid = ka.getProfile().mid
-admin = ["uca51afa767df87ba3705494b97c3355c"]
+Fmid = km.getProfile().mid
+Gmid = kn.getProfile().mid
+Hmid = ko.getProfile().mid
+Imid = kp.getProfile().mid
+Jmid = kq.getProfile().mid
+Kmid = kr.getProfile().mid
+Lmid = kj.getProfile().mid
+
+Bots=[mid,Amid,kimid,ki2mid,Cmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid,Lmid]
+admin = ["ud24af63fd62d14c3bf8f719df80c3745"]
 me = cl.getProfile().mid
 bot1 = cl.getProfile().mid
 main = cl.getProfile().mid
 kicker1 = ki.getProfile().mid
+kicker2 = kk.getProfile().mid
+kicker3 = ks.getProfile().mid
+kicker4 = kc.getProfile().mid
+kicker5 = ka.getProfile().mid
+kicker6 = km.getProfile().mid
+kicker7 = kn.getProfile().mid
+kicker8 = ko.getProfile().mid
+kicker9 = kp.getProfile().mid
+kicker10 = kq.getProfile().mid
+kicker11 = kr.getProfile().mid
+kicker12 = kj.getProfile().mid
 bots = me + kicker1
 protectname = []
 protecturl = []
 protection = []
 autocancel = {}
 autoinvite = []
-autoleaveroom = []
+autoleaveroom = [] 
 
-admins = ["uca51afa767df87ba3705494b97c3355c"]
-Rx5 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
-Rx4 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
-Rx3 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
-Rx2 = ["ua51ba06b0dd18c0bfe2cc6caa3458202"]
-Rx1 = ["uc7f32bb28dc009916d40af87c9910ddc"]
-Administrator = admins + Rx5 + Rx4 + Rx3 + Rx2 + Rx1
-AS = Rx2 + Rx1 + Rx3 + Rx4 + Rx5
+admins = ["ud24af63fd62d14c3bf8f719df80c3745"]
+Rx12 = ["ub25203fa977feabfb9b48c2a217f7c5b"]
+Rx11 = ["u69e29260fae1bae30db65dc8c24c0f16"]
+Rx10 = ["ub2d390fda0c7ec03373009a97debe6f9"]
+Rx9 = ["ua6153d8c9daa16d799a19716ed0e50f8"]
+Rx8 = ["uaffb56a754f810d1ca7c49658503744b"]
+Rx7 = ["u81e8c0945d7c86244b31e8f70e45d6e2"]
+Rx6 = ["u1642bb26466ae4c647d723692030b418"]
+Rx5 = ["u4be0d0fa6d209732889a5c86df184b0a"]
+Rx4 = ["u2b8cc0e7eb9e1acdd76ac52cbd304de3"]
+Rx3 = ["ub5511376daa821f14e7097bc2d7e90aa"]
+Rx2 = ["uc87feaa47fa98729d562d2306d36187a"]
+Rx1 = ["u84eaf58cd49bff840407abe3fc4db59c"]
+Administrator = admins + Rx12 + Rx11 + Rx10 + Rx9 + Rx8 + Rx7 + Rx6 + Rx5 + Rx4 + Rx3 + Rx2 + Rx1
+AS = Rx2 + Rx1 + Rx3 + Rx4 + Rx5 + Rx6 + Rx7 + Rx8 + Rx9 + Rx10 + Rx11 + Rx12
 adminsA = admins + Rx3 + Rx5
+Administrator = admins + Rx5 + Rx4 + Rx3 + Rx2 + Rx1
 
 omikuzi = ["大吉","中吉","小吉","末吉","大凶","凄1�7"]
 
@@ -167,26 +233,53 @@ wait = {
     'autoCancel':{"on":False,"members":1},
     'leaveRoom':True,
     'timeline':True,
-    'autoAdd':True,
-    'message':"""                 ღ¸.✻´`✻.¸¸ღ
-     ╔════♪•●♥●•♪════╗
-         ♝●❉•ARTHUR•❉●♝
-            ∮.♪•Self★Bot•♪.∮
-                 Add For me
-line.me/ti/p/~art-bot-cyber01
-     ╚════♪•●♥●•♪════╝
-Thank For Add Me
+    'autoAdd':False,
+    'message':""" \n
+「Message AutoAdd」
+Thank for add  Man..✍️
+
+⛿เปิดสอนเขียนบอท Selfbot กันรัน
+ยกเลิกเชิญออโต้ รันให้ตายก็ไม่เข้า
+⛿และสอนเขียนบอทป้องกัน ชุด Bot-Protect
+
+✰มีครบทุกฟังชั่น✰
+☛ชุดบอทป้องกัน ☚
+☛ จ่ายเพียงรอบเดียว ☚
+☛ ไม่ต้องเสียรายเดือน ☚
+✰เป็นวิชา รู้หลัก จะไปเปิดสอนต่อได้ด้วย✰
+
+╔══════════•✰•══════════☆۰۪۫
+║『ติดตั้งบอท Sirichan v10』 วันนี้..✍️
+║มีโปรฯดีๆ 【ติดตั้งบอทพร้อมประกัน】
+║〖2ชุด〗☞แถมให้ฟรีอีก 1 กลุ่มบอท☜
+╠══════════•✰•══════════☆۰۪۫
+║  💡คุณสมบัติพิเศษของบอท v10💡
+╠☛🔒ป้องกันสมาชิกเปิดลิงก์ห้อง
+╠☛🔒ป้องกันสมาชิกเปลี่ยนรูปกลุ่ม
+╠☛🔒ป้องกันสมาชิกเปลี่ยนชื่อกลุ่ม
+╠☛🔒ป้องกันสมาชิกเชิญคนนอกเข้ากลุ่ม
+╠☛🔒ป้องกันคนนอกเข้ามาลบคนในกลุ่ม
+╠☛🔒ห้ามลบสมาชิกในกลุ่ม นอกจากแอด
+╠☛🔒ถ้าลบเกิน3คน บอทจะเตะออกทันที
+╚📝สามารถเช็คคนที่อ่านในกลุ่มได้ด้วยตนเอง
+
+✫☆✰สนใจทักมาสอบถามได้✰☆✫
+http://line.me/ti/p/~1ove..neverdie
+🆔 sirichan999 🆔 1ove..neverdie
+
+📧ติดต่อเพิ่มเติม↲  📲 0639375811
+http://line.me/ti/p/%40ypr5531u
 """,
     "lang":"JP",
-    "comment":"Auto like By.http://line.me/ti/p/~art-bot-cyber01☬",
-    "likeOn":False,
-    "commentOn":False,
+    "comment":"☛ Auto Like ☚ ᵀᴴᴬᴵᴸᴬᴺᴰ⛿️Protect-BOT\n📧http://line.me/R/ti/p/%40ypr5531u ", 
+    "likeOn":True,
+    "commentOn":True,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
     "clock":False,
     "blacklist":{}, 
-    "wblacklist":False,
+    "wblacklist":False,sys
     "pnharfbot":{},
     "pname":{},
     "pro_name":{},    
